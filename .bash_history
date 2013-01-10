@@ -1430,3 +1430,282 @@ meld
 geany
 screen -r
 exit
+cd MPA3-JB/
+cd 4AJ.2.1/
+ls
+vim u-boot/drivers/fastboot.c 
+grep -rn "check_key" ./u-boot/
+vim -R u-boot/board/bluepoint/bluepoint.c 
+grep -rn "trigger_detect" ./u-boot/
+vim -R u-boot/cpu/omap4/syslib.c 
+ls
+./build_bluepoint userdebug
+clear
+./build_bluepoint userdebug
+ls -al u-boot/
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/Bin_MPA3/
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/Bin_MPA3/
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/Bin_MPA3/
+ls
+vim u-boot/board/bluepoint/bluepoint.c 
+ls -al bin/emmc_files/bluepoint_userdebug
+ls -al u-boot/
+exit
+cd ../
+ls
+cd ~
+ls
+clear
+ls
+cd Downloads/svn.usi/MPA3_JB/4AJ.2.1/
+svn up
+cd ../../
+cd ..
+ls
+cd github.com/
+ls
+git help
+git help checkout
+git clone git://github.com/nmenon/omap-u-boot-utils.git
+ls
+cd ..
+mkdir git.denx.de
+ls
+cd git.denx.de/
+ls
+git clone git://git.denx.de/u-boot-ti.git
+cd u-boot-ti/
+ls
+git branch
+vim -R board/ti/sdp4430/sdp.c 
+cd ..
+ls
+git clone git://git.denx.de/u-boot.git
+git clone git://git.denx.de/u-boot-arm.git
+cd ..
+ls
+cd git.denx.de/
+ls
+cd ..
+ls
+cd ..
+ls
+cd MPA3-JB/
+ls
+cd 4AJ.2.1/
+vim kernel/android-3.0/arch/arm/mach-omap2/board-4430sdp.c 
+vim /newhome/qian/.bash_logout 
+cd /newhome/qian/GitHub_Qiao-Huang_files/
+ls
+ls -al
+cd ../GitHub_Qiao-Huang_scripts/
+ls
+ls -al
+git fetch
+git commit -a
+git add .bash_history
+git commit -a
+git fetch
+git push
+exit
+ls
+cd /newhome/qian/Downloads/
+ls
+ls -al BigBoard_Moto_Android/
+ls -al BigBoard_Moto_Android/Android\ 2.3/
+ls -al BigBoard_Moto_Android/Android\ 2.3/20121208_BSP/
+ls
+rm -rf 4AJ.1.1.tar.gz 
+rm -rf 4AJ.1.1
+ls~
+mkdir github.com
+mv omapconf/ github.com/
+ls
+cd github.com/
+ls
+cd omapconf/
+ls
+git fetch
+git pull
+cd ..
+ls
+cd ..
+ls
+cd gitorious.org/
+ls
+cd omap-audio/
+ls
+cd abefw/
+ls
+git fetch
+git pull
+cd ../../
+ls~
+cd ..
+ls
+rm -rf bluepoint_0812_gb_srouce_tree
+qian@MandN-TT05:~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs$ ping lm-sensors.orgPING lm-sensors.org (160.45.254.26) 56(84) bytes of data.
+rm -rf i2c*
+ls~
+svn checkout http://lm-sensors.org/svn/i2c-tools/trunk i2c-tools
+ls
+cd i2c-tools/
+ls
+cd ..
+mkdir svn.lm-sensors
+ls
+mv i2c-tools/ svn.lm-sensors/~
+ls
+cd svn.usi/
+ls
+rm -rf /newhome/qian/MPA3-JB/4AJ.2.1/*.svn
+ls -al /newhome/qian/MPA3-JB/4AJ.2.1/kernel/android-3.0/
+cd /newhome/qian/MPA3-JB/4AJ.2.1/
+ls
+svn up
+cd ..
+ls
+find ./ -type d -name ".svn" | xargs rm -rf
+ls
+cd ../
+ls
+~
+ls
+cd MPA3_JB/
+ls
+rsync -rRvul --no-implied-dirs --times 4AJ.2.1/ /newhome/qian/MPA3-JB/
+ls
+rsync -rRvul --no-implied-dirs --times 4AJ.1.1/ /newhome/qian/MPA3-JB/
+ls
+cd /newhome/qian/MPA3-JB/4AJ.2.1/~
+ls
+vim x-loader/build_bluepoint.sh 
+vim u-boot/build_bluepoint.sh 
+vim kernel/android-3.0/build_bluepoint.sh 
+top
+vim mydroid/build_bluepoint.sh
+cp -r /newhome/qian/omapconf/ mydroid/external/
+cp /newhome/qian/MPA3-Android-4AJ.1.1/mydroid/external/omapconf/Android.mk /newhome/qian/GitHub_Qiao-Huang_files/
+cp /newhome/qian/MPA3-Android-4AJ.1.1/mydroid/external/omapconf/Android.mk /newhome/qian/MPA3-JB/4AJ.2.1/mydroid/external/omapconf/
+cd /newhome/qian/Downloads/github.com/omapconf/
+ls
+git fetch
+git pull~
+less /newhome/qian/GitHub_Qiao-Huang_scripts/Q-menu 
+source ~/.bashrc 
+htags
+ls
+mv HTML/ HTML-omapconf
+rm -rf /newhome/qian/www/HTML-omapconf/
+mv HTML-omapconf/ /newhome/qian/www/
+rm G*
+ls
+git fetch
+git pull
+ls
+cd /newhome/qian/MPA3-JB/4AJ.2.1/
+vim mydroid/external/omapconf/Android.mk 
+vim mydroid/device/ti/bluepoint/device.mk 
+./build_bluepoint userdebug
+vim mydroid/device/ti/bluepoint/device.mk 
+cd mydroid/hardware/ti/
+svn st
+man rsync
+ls
+cd ..
+ls
+cd ../../../
+ls
+rm -rf 4AJ.2.1/
+ls
+cd /newhome/qian/GitHub_Qiao-Huang_files/
+ls
+mv Android.mk Android.mk(omapconf) 
+mv Android.mk omapconf_Android.mk
+git add omapconf_Android.mk
+git commit -a
+git push
+cd /newhome/qian/MPA3-JB/4AJ.2.1/
+ls
+vim x-loader/build_bluepoint.sh 
+vim u-boot/build_bluepoint.sh 
+vim kernel/android-3.0/build_bluepoint.sh 
+vim mydroid/build_bluepoint.sh 
+vim build_bluepoint 
+vim env_setup 
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/Bin_MPA3/
+ls
+cd /newhome/qian/Downloads/
+ls
+cd svn.
+cd svn.usi/
+ls
+cd MPA3_JB/4AJ.2.1/
+ls
+cd u-boot/
+svn st
+svn up
+htags -aFghInosxv --show-position --tabs 3
+ls
+mv HTML/ HTML-MOTO_4AJ.2.1_uboot
+ls
+rm -rf /newhome/qian/www/HTML-MOTO_4AJ.2.1_uboot/
+mv HTML-MOTO_4AJ.2.1_uboot/ /newhome/qian/www/
+rm G*
+ls
+grep -rns "reboot-bootloader" ./
+grep -rns "Entering" ./
+grep -rns "Entering fast" ./
+grep -rns "Entering Fast" ./
+grep -rns "entering Fast" ./
+grep -rns "entering fast" ./
+grep -rns "Fastboot entered" ./
+grep -rns "Force to Enter" ./
+grep -rns "trigger_detect" ./
+grep -rns "jchen" ./
+grep -rns "jchen" ../x-loader/
+grep -rns "jchen" ../kernel/android-3.0/
+grep -rns "MUX" ./
+grep -rns "MUX" ./board/bluepoint/
+top
+cd ../
+ls
+cd /newhome/qian/MPA3-JB/4AJ.2.1/
+ls
+cd u-boot/
+ls
+vim -R board/bluepoint/bluepoint.c 
+sudo apt-get install dos2unix
+sudo apt-get install tofrodos
+fromdos board/bluepoint/bluepoint.c
+vim -R board/bluepoint/bluepoint.c 
+cd ..
+vim x-loader/build_bluepoint.sh 
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/Bin_MPA3/
+ls
+grep -rn "check_keypad_enter_recovery_fastboot_mode" ./u-boot/
+vim u-boot/board/bluepoint/bluepoint.c 
+./build_bluepoint userdebug
+vim u-boot/board/bluepoint/bluepoint.c 
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/Bin_MPA3/
+ls -al
+ls -al bin/emmc_files/bluepoint_userdebug/
+ls -al u-boot/
+./build_bluepoint userdebug
+vim u-boot/board/bluepoint/bluepoint.c 
+ls
+svn up
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/Bin_MPA3/
+vim u-boot/board/bluepoint/bluepoint.c 
+./build_bluepoint userdebug
+vim u-boot/board/bluepoint/bluepoint.c 
+grep -rn "trigger_detect" u-boot/
+vim u-boot/board/bluepoint/bluepoint.c 
+exit
+screen -r
+logout
