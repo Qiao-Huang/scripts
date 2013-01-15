@@ -1709,3 +1709,285 @@ vim u-boot/board/bluepoint/bluepoint.c
 exit
 screen -r
 logout
+cd MPA3-JB/4AJ.2.1/
+ls
+./build_bluepoint userdebug
+ls -al u-boot/
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/Bin_MPA3/
+ls
+clear; ./build_bluepoint userdebug
+ls -al u-boot/
+clear
+./build_bluepoint userdebug
+ls -al u-boot/
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/Bin_MPA3/
+./build_bluepoint userdebug
+ls -al
+ls -al u-boot/
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/Bin_MPA3/
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/Bin_MPA3/
+exit
+cd GitHub_Qiao-Huang_scripts/
+ls -al
+git commit -a
+git add .screenrc
+git add .viminfo
+git add .vimrc
+git commit -a
+git push
+screen -r
+screen
+cd MPA3-JB/4AJ.2.1/
+grep -rn "trigger_detect" ./u-boot/
+vim u-boot/board/bluepoint/bluepoint.c 
+vim u-boot/include/configs/bluepoint.h 
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/
+ls -al u-boot/
+vim u-boot/board/bluepoint/bluepoint.c 
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/
+ls -al u-boot/
+grep -rn "trigger_detect" ./u-boot/
+vim u-boot/board/bluepoint/bluepoint.c 
+ls -al bin/emmc_files/bluepoint_userdebug/
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/
+ls
+ls -al bin/emmc_files/bluepoint_userdebug/
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/Bin_MPA3/
+rm /newhome/qian/www/*.img
+rm /newhome/qian/www/*.bin
+rm /newhome/qian/www/MLO 
+rm /newhome/qian/www/mkbootimg 
+rm /newhome/qian/www/zImage 
+rm /newhome/qian/www/
+vim u-boot/board/bluepoint/bluepoint.c 
+vim u-boot/include/bsp_version.h 
+vim u-boot/mpa3-u-boot-history.txt 
+cd u-boot/
+svn st
+make clean
+make distclean
+svn st
+svn up include/bsp_version.h 
+less include/bsp_version.h 
+svn ci include/bsp_version.h 
+svn ci mpa3-u-boot-history.txt include/bsp_version.h include/configs/bluepoint.h 
+cd ..
+ls
+vim kernel/android-3.0/arch/arm/mach-omap2/remoteproc.c 
+svn diff kernel/android-3.0/arch/arm/mach-omap2/remoteproc.c
+svn diff kernel/android-3.0/arch/arm/mach-omap2/remoteproc.c@398 kernel/android-3.0/arch/arm/mach-omap2/remoteproc.c@397
+svn diff kernel/android-3.0/arch/arm/mach-omap2/remoteproc.c@397 kernel/android-3.0/arch/arm/mach-omap2/remoteproc.c@396
+svn diff -r 398:397 kernel/android-3.0/arch/arm/mach-omap2/remoteproc.c
+svn diff -r 398:397
+svn diff -r 396:397
+svn diff -r 397:396
+svn diff -r 397:398
+svn st
+cd u-boot/
+svn st
+svn up
+cd ../x-loader/
+svn up
+cd .
+cd ..
+svn log
+svn help log
+top
+diff -NEbBwpyur ../4AJ.1.1/mydroid/device/ti/common-open/audio/audio_hw.c ./mydroid/device/ti/common-open/audio/audio_hw.c 
+diff --help
+diff --help | less
+diff -NEbBwpyr ../4AJ.1.1/mydroid/device/ti/common-open/audio/audio_hw.c ./mydroid/device/ti/common-open/audio/audio_hw.c 
+diff -NEbBwupyr ../4AJ.1.1/mydroid/device/ti/common-open/audio/audio_hw.c ./mydroid/device/ti/common-open/audio/audio_hw.c 
+diff --help | less
+diff -NEbBwuyr ../4AJ.1.1/mydroid/device/ti/common-open/audio/audio_hw.c ./mydroid/device/ti/common-open/audio/audio_hw.c 
+diff -NEbBwupr ../4AJ.1.1/mydroid/device/ti/common-open/audio/audio_hw.c ./mydroid/device/ti/common-open/audio/audio_hw.c 
+diff -NEbBwupr ../4AJ.1.1/mydroid/device/ti/common-open/audio/audio_hw.c ./mydroid/device/ti/common-open/audio/audio_hw.c | vim
+ls
+ls -al
+rm .swp 
+diff -NEbBwupr ../4AJ.1.1/mydroid/device/ti/common-open/audio/audio_hw.c ./mydroid/device/ti/common-open/audio/audio_hw.c | less
+./build_bluepoint userdebug
+ls -al mydroid/
+ls -al mydroid/out/target/product/bluepoint/
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/Bin_MPA3/
+vim kernel/android-3.0/sound/soc/codecs/twl6040.c
+vim kernel/android-3.0/arch/arm/configs/bluepoint_defconfig 
+grep -rn "SND_DEBUG" ./kernel/android-3.0/arch/arm/configs/
+grep -rn "_DEBUG" ./kernel/android-3.0/arch/arm/configs/
+grep -rn "_DEBUG" ./kernel/android-3.0/arch/arm/configs/ | less
+grep -rn "_DEBUG" ./kernel/android-3.0/arch/arm/configs/bluepoint_defconfig 
+grep -rn "SOUND_DEBUG" ./kernel/android-3.0/arch/arm/configs/
+grep -rn "SOUND" ./kernel/android-3.0/arch/arm/configs/
+grep -rn "SOUND" ./kernel/android-3.0/arch/arm/configs/bluepoint_defconfig 
+grep -rn "SND" ./kernel/android-3.0/arch/arm/configs/ 
+grep -rn "SND" ./kernel/android-3.0/arch/arm/configs/  | less
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/Bin_MPA3/
+cd kernel/android-3.0/
+ls
+make ARCH=arm menuconfig
+cd ../
+exit
+screen -r
+exit
+cd MPA3-JB/4AJ.2.1/
+./build_bluepoint 
+./build_bluepoint userdebug
+cd u-boot/
+make clean
+make distclean
+cd ..
+./build_bluepoint userdebug
+ls -al u-boot/
+less u-boot/mpa3-u-boot-history.txt 
+svn diff -r 398:397
+svn diff -r 397:396
+svn diff -r 396:395
+svn diff -r 395:394
+svn diff -r 393:392
+svn log
+svn log u-boot/
+svn log ./
+svn log
+svn log -r 399
+8
+svn log -r 398
+svn log -r 397
+svn log -r 396
+svn log -r 395
+svn log -r 394
+svn log -r 393
+svn log -r 392
+svn log -r 391
+svn log -r 390
+svn log -r 388
+svn log -r 389
+svn log -r 388
+svn log -r 380
+svn log --username Kaino
+svn log -r 370:388
+clear
+svn diff -r 385:388
+meld
+vim mydroid/device/ti/common-open/audio/audio_hw.c 
+vim kernel/android-3.0/arch/arm/configs/bluepoint_defconfig 
+cd kernel/android-3.0/
+make ARCH=arm menuconfig
+diff -NbBur ./.config arch/arm/configs/bluepoint_defconfig 
+vim kernel/android-3.0/arch/arm/configs/bluepoint_defconfig 
+vim arch/arm/configs/bluepoint_defconfig 
+cd ../
+cd ..
+screen -r
+screen
+exit
+ls
+./build_bluepoint userdebug
+cd ../4AJ.1.1/
+ls
+source ./env.sh 
+cd kernel/
+ls
+cd android-3.0/
+ls
+./build_bluepoint.sh userdebug
+exit
+screen -r
+ls
+cd MPA3-JB/
+ls
+cd 4AJ.1.1/
+ls
+source ./env.sh 
+cd mydroid/
+ls
+./build.sh 
+ls
+cd ..
+ls
+cd /newhome/qian/Downloads/svn.usi/MPA3_JB/4AJ.1.1/
+cd /newhome/qian/MPA3-JB/4AJ.1.1/
+cd x-loader/
+ls
+./build_bluepoint.sh 
+cd ../
+cd u-boot/
+less build.sh 
+./build.sh 
+cd ../mydroid/
+./build.sh 
+vim ./build.sh 
+./build.sh 
+cd ..
+ls
+less mkmmc-all.sh 
+cp kernel/android-3.0/mkbluepointimg.sh bin/emmc_files/bluepoint_eng/
+cp kernel/android-3.0/arch/arm/boot/zImage bin/emmc_files/bluepoint_eng/
+cp mydroid/out/target/product/bluepoint/*.img bin/emmc_files/bluepoint_eng/
+cp u-boot/u-boot.bin bin/emmc_files/bluepoint_eng/
+cp x-loader/MLO bin/emmc_files/bluepoint_eng/
+cd bin/emmc_files/
+ls
+cd bluepoint_eng/
+ls
+./mkbluepointimg.sh 
+less mkbluepointimg.sh 
+ls
+ls -al
+cp ./* /newhome/qian/www/Bin_MPA3/
+cd ../../../
+less kernel/android-3.0/Documentation/filesystems/debugfs.txt 
+ls
+vim mydroid/device/ti/common-open/audio/audio_hw.c 
+cp bin/emmc_files/bluepoint_eng/boot.img /newhome/qian/www/Bin_MPA3/
+cp bin/emmc_files/bluepoint_eng/system.img /newhome/qian/www/Bin_MPA3/
+q
+exit
+cd MPA3-JB/4AJ.2.1/
+exit
+screen
+exit
+top
+w
+uname -mrs
+uname -a
+cat /proc/sys/kernel/osrelease 
+cat /proc/sys/kernel/{ostype,osrelease,version}
+uname -a
+grep flags /proc/cpuinfo 
+file /usr/bin/ld
+file /usr/bin/ld.bfd 
+less MPA3-JB/4AJ.1.1/mydroid/build.sh
+vim MPA3-JB/4AJ.2.1/kernel/android-3.0/build_bluepoint.sh 
+clear
+cd MPA3-JB/4AJ.2.1/
+vim x-loader/build_bluepoint.sh 
+vim u-boot/build_bluepoint.sh 
+vim kernel/android-3.0/build_bluepoint.sh 
+vim mydroid/build_bluepoint.sh 
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/Bin_MPA3/
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/* /newhome/qian/www/Bin_MPA3/
+vim mydroid/device/ti/common-open/audio/audio_hw.c 
+exit
+w
+ls
+screen -r
+screen
+ls
+cd omapconf/
+ls
+less README.md 
+make CROSS_COMPILE=/newhome/qian/MPA3-JB/4AJ.2.1/mydroid/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi- omapconf
+less omapconf.c 
+less README.md 
+echo $CC
+less Makefile 
+exit
