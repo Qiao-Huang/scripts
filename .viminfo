@@ -8,14 +8,20 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/close_output
+~MSle0~/BUI
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:q
 :wq
+:q
+:Q
+:set nosmartindent
+:set noautoindent
+:set nocindent
+:set noindent
+:set noaudoindent
 :w
 :aq
 :q!
@@ -23,9 +29,42 @@ $
 :set nonu
 :set autoindent
 :set nu
-:set nosmartindent
 
 # Search String History (newest to oldest):
+?/BUI
+?/USI
+?/while
+?/for
+?/delay_power_threads
+?/start_thread
+?/thread_fn
+?/set_opp_mode
+?/opp_set
+?/Alive
+?/Keep
+?/unfinished
+?/Kill
+?/error
+?/**
+?/twl6040_write
+?/lp_constraints
+?/lp_rates
+?/twl.h
+?/hs_right_step
+?/get_revi
+?/SYSCLK_SEL
+?/vibrar_mux
+?/snd_soc_dapm_dai
+?/hw_param
+?/twl6040_power
+?/REV_ES1_
+?/get_trim
+?/vibra_en
+?/VIBSEL
+?/HSDACENA
+?/HSDRVMODE
+?/*
+?/vddhf
 ?/close_output
 ?/open_output_stream
 ?/select_output_device
@@ -42,40 +81,6 @@ $
 ?/trigger
 ?/abcdfergg
 ?/RECOVERY
-?/dump_pad
-?/SIM
-?/dump
-?/tiny
-?/twl6040_codec
-?/system.img
-?/Waiting
-?/job
-?/error:
-?/doc-comment-check-timestamp
-?/Kill
-?/userdata.img
-?/git
-?/system
-?/make
-?/error
-?/PATH
-?/source
-?/sdc
-?/sd
-?/MAX_
-?/prox
-?/part2g
-?/partition
-?/tones_dl
-?/tones_dl1
-?/amic_both
-?/aux_out
-?/EQUAL
-?/USI
-?/MIC
-?/fm
-?/REGULATOR
-?/TCXO
 
 # Expression History (newest to oldest):
 
@@ -112,175 +117,145 @@ $
 	*******************************************************************************************************
 	[4AJ.2.1_U-BOOT-006]
 ""1	LINE	0
-	CONFIG_SND_RAWMIDI=y
-"2	LINE	0
 	
+"2	LINE	0
+	};
 "3	LINE	0
-	CONFIG_SND_VERBOSE_PROCFS=y
+		96000,
 "4	LINE	0
-	CONFIG_SND_DEBUG=y
+		48000,
 "5	LINE	0
-	CONFIG_SND_OMAP4_ABE_USE_ALT_FW=y
+		44100,
 "6	LINE	0
-	CONFIG_SND_OMAP_SOC_OMAP4_HDMI=y
+		32000,
 "7	LINE	0
-	CONFIG_SND_OMAP_SOC_SDP4430=y
+		16000,
 "8	LINE	0
-	CONFIG_SND_OMAP_SOC=y
+		8000,
 "9	LINE	0
-	CONFIG_SND_SOC=y
+	static unsigned int hp_rates[] = {
 "-	CHAR	0
 	 
 
 # File marks:
-'0  97  0  ~/MPA3-JB/4AJ.2.1/u-boot/include/configs/bluepoint.h
-'1  300  0  ~/MCD_MPA_ANDROID_1208/log-grep-ducati.txt
-'2  41  0  ~/MPA3-JB/4AJ.2.1/log-grep-ducati.txt
-'3  3442  17  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
-'4  18  7  ~/MPA3-JB/4AJ.2.1/mydroid/build_bluepoint.sh
-'5  6  16  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/build_bluepoint.sh
-'6  1  0  ~/MPA3-JB/4AJ.2.1/u-boot/build_bluepoint.sh
-'7  1  0  ~/MPA3-JB/4AJ.2.1/x-loader/build_bluepoint.sh
-'8  5  23  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/build_bluepoint.sh
-'9  5  7  ~/MPA3-JB/4AJ.1.1/mydroid/build.sh
+'0  4027  78  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
+'1  4075  1  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
+'2  703  4  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+'3  2260  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/omap/omap-abe-dsp.c
+'4  1  0  /etc/ssh/ssh_config
+'5  1  0  ~/.ssh/known_hosts
+'6  25  0  /etc/ssh/ssh_config
+'7  2211  41  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/omap/omap-abe-dsp.c
+'8  1  0  ~/MPA3-JB/4AJ.2.1/x-loader/build_bluepoint.sh
+'9  1  0  ~/MPA3-JB/4AJ.2.1/u-boot/build_bluepoint.sh
 
 # Jumplist (newest first):
--'  97  0  ~/MPA3-JB/4AJ.2.1/u-boot/include/configs/bluepoint.h
--'  1  0  ~/MPA3-JB/4AJ.2.1/u-boot/include/configs/bluepoint.h
--'  300  0  ~/MCD_MPA_ANDROID_1208/log-grep-ducati.txt
--'  1  0  ~/MCD_MPA_ANDROID_1208/log-grep-ducati.txt
--'  41  0  ~/MPA3-JB/4AJ.2.1/log-grep-ducati.txt
--'  1  0  ~/MPA3-JB/4AJ.2.1/log-grep-ducati.txt
--'  3442  17  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  3900  47  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  3378  9  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  1029  12  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  4047  4  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  3496  16  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  3427  4  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  3423  12  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  2348  11  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  2325  12  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  2292  12  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  1944  8  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  1514  12  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  1508  12  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  1490  12  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  1594  16  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
+-'  4027  78  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
+-'  3834  28  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
+-'  1849  58  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
+-'  1487  48  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
+-'  50  0  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
 -'  1  0  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  18  7  ~/MPA3-JB/4AJ.2.1/mydroid/build_bluepoint.sh
--'  1  0  ~/MPA3-JB/4AJ.2.1/mydroid/build_bluepoint.sh
--'  6  16  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/build_bluepoint.sh
--'  1  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/build_bluepoint.sh
--'  1  0  ~/MPA3-JB/4AJ.2.1/u-boot/build_bluepoint.sh
+-'  4075  1  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
+-'  2782  3  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
+-'  703  4  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  846  4  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  800  38  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  350  4  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  61  44  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  14  73  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  1716  10  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  1590  73  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  1571  55  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  1563  4  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  1603  52  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  1508  16  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  1516  13  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  1519  15  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  1205  42  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  1179  15  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  727  42  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  711  43  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  310  13  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  67  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  311  18  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  1  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+-'  2260  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/omap/omap-abe-dsp.c
+-'  43  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/omap/omap-abe-dsp.c
+-'  1  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/omap/omap-abe-dsp.c
+-'  1  0  /etc/ssh/ssh_config
+-'  1  0  ~/.ssh/known_hosts
+-'  25  0  /etc/ssh/ssh_config
+-'  2211  41  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/omap/omap-abe-dsp.c
 -'  1  0  ~/MPA3-JB/4AJ.2.1/x-loader/build_bluepoint.sh
--'  5  23  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/build_bluepoint.sh
--'  5  7  ~/MPA3-JB/4AJ.1.1/mydroid/build.sh
--'  1  0  ~/MPA3-JB/4AJ.1.1/mydroid/build.sh
--'  526  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/arch/arm/configs/bluepoint_defconfig
--'  1  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/arch/arm/configs/bluepoint_defconfig
--'  1  0  kernel/android-3.0/arch/arm/configs/bluepoint_defconfig
--'  534  15  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/arch/arm/configs/bluepoint_defconfig
--'  531  17  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/arch/arm/configs/bluepoint_defconfig
--'  300  2  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  147  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  1  0  ~/MPA3-JB/4AJ.2.1/u-boot/build_bluepoint.sh
+-'  6  59  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/build_bluepoint.sh
+-'  1  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/build_bluepoint.sh
+-'  18  44  ~/MPA3-JB/4AJ.2.1/mydroid/build_bluepoint.sh
+-'  1  0  ~/MPA3-JB/4AJ.2.1/mydroid/build_bluepoint.sh
+-'  31401  82  ~/android_make.out
+-'  10806  0  ~/android_make.out
+-'  1  0  ~/android_make.out
+-'  5  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/build_bluepoint.sh
+-'  51045  63  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  38752  72  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  8373  59  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  8297  43  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  8293  47  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  8205  59  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  8095  65  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  7968  47  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  7755  44  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  7643  44  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  7593  43  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  7444  43  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  5168  52  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  5138  58  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  5009  53  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  5008  53  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  4896  50  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  4853  51  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  4493  44  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  4447  43  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  4293  37  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  1  1  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+-'  1  0  /etc/bash_completion.d/git-prompt
+-'  278  0  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
+-'  974  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  375  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  321  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  292  19  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  1976  10  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  1918  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  1917  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  1916  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  1915  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  1914  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  1583  2  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  1046  2  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  1042  2  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  972  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
 -'  1  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1208  11  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  4018  8  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  4016  8  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  4013  8  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  4011  4  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  320  21  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  434  21  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  4010  40  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  4000  15  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  3569  12  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  2735  51  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  2599  47  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  2033  4  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  1953  11  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  1750  16  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  1634  12  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  1402  8  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  1331  8  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  836  28  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  348  21  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  3852  46  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  3685  11  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  3424  37  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  3353  11  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  620  3  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  572  18  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  551  4  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  483  35  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  372  35  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  355  7  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  246  4  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/arch/arm/mach-omap2/remoteproc.c
--'  1  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/arch/arm/mach-omap2/remoteproc.c
--'  1  19  ~/MPA3-JB/4AJ.2.1/u-boot/svn-commit.tmp
--'  1  0  ~/MPA3-JB/4AJ.2.1/u-boot/include/svn-commit.tmp
--'  43  3  ~/MPA3-JB/4AJ.2.1/u-boot/mpa3-u-boot-history.txt
--'  1  0  ~/MPA3-JB/4AJ.2.1/u-boot/mpa3-u-boot-history.txt
--'  7  23  ~/MPA3-JB/4AJ.2.1/u-boot/include/bsp_version.h
--'  1  0  ~/MPA3-JB/4AJ.2.1/u-boot/include/bsp_version.h
--'  279  1  ~/MPA3-JB/4AJ.2.1/u-boot/board/bluepoint/bluepoint.c
--'  157  4  ~/MPA3-JB/4AJ.2.1/u-boot/board/bluepoint/bluepoint.c
--'  151  2  ~/MPA3-JB/4AJ.2.1/u-boot/board/bluepoint/bluepoint.c
--'  141  2  ~/MPA3-JB/4AJ.2.1/u-boot/board/bluepoint/bluepoint.c
--'  130  2  ~/MPA3-JB/4AJ.2.1/u-boot/board/bluepoint/bluepoint.c
--'  412  4  ~/MPA3-JB/4AJ.2.1/u-boot/board/bluepoint/bluepoint.c
--'  407  4  ~/MPA3-JB/4AJ.2.1/u-boot/board/bluepoint/bluepoint.c
--'  402  4  ~/MPA3-JB/4AJ.2.1/u-boot/board/bluepoint/bluepoint.c
--'  395  3  ~/MPA3-JB/4AJ.2.1/u-boot/board/bluepoint/bluepoint.c
--'  381  5  ~/MPA3-JB/4AJ.2.1/u-boot/board/bluepoint/bluepoint.c
--'  378  4  ~/MPA3-JB/4AJ.2.1/u-boot/board/bluepoint/bluepoint.c
--'  374  4  ~/MPA3-JB/4AJ.2.1/u-boot/board/bluepoint/bluepoint.c
--'  370  4  ~/MPA3-JB/4AJ.2.1/u-boot/board/bluepoint/bluepoint.c
--'  413  0  ~/MCD_MPA_ANDROID_1208/log-grep-ducati.txt
--'  3442  17  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  3900  47  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  3378  9  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  1029  12  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  4047  4  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  3496  16  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  3427  4  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  3423  12  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
+-'  1549  41  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  1843  29  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  1697  30  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  1577  30  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  1535  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  272  42  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  251  20  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  1551  9  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  1550  21  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  252  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  983  2  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  79  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  34  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
 
 # History of marks within files (newest to oldest):
 
-> ~/MPA3-JB/4AJ.2.1/u-boot/include/configs/bluepoint.h
-	"	97	0
-	^	77	26
-	.	67	26
-	+	65	3
-	+	73	0
-	+	74	0
-	+	76	1
-	+	77	0
-	+	67	31
-	+	84	0
-	+	82	0
-	+	77	42
-	+	78	0
-	+	79	0
-	+	80	0
-	+	81	0
-	+	78	12
-	+	79	12
-	+	80	12
-	+	81	12
-	+	67	26
-
-> ~/MCD_MPA_ANDROID_1208/log-grep-ducati.txt
-	"	300	0
-
-> ~/MPA3-JB/4AJ.2.1/log-grep-ducati.txt
-	"	41	0
-
 > ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
-	"	3442	17
-	^	620	4
-	.	606	4
+	"	4027	78
+	^	4027	79
+	.	4027	78
 	+	24	0
 	+	23	20
 	+	24	27
@@ -339,30 +314,50 @@ $
 	+	602	4
 	+	603	4
 	+	606	4
+	+	354	1
+	+	353	53
+	+	403	14
+	+	428	0
+	+	550	10
+	+	552	4
+	+	563	0
+	+	578	10
+	+	583	0
+	+	598	10
+	+	607	0
+	+	4022	17
+	+	4025	65
+	+	4026	50
+	+	4027	78
 
-> ~/MPA3-JB/4AJ.1.1/mydroid/device/ti/common-open/audio/audio_hw.c
-	"	1342	12
-	.	1342	0
-	+	1342	0
+> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+	"	703	4
+	^	311	19
+	.	634	18
+	+	634	18
 
-> ~/MPA3-JB/4AJ.2.1/mydroid/build_bluepoint.sh
-	"	18	7
-	^	18	8
-	.	18	7
-	+	11	0
-	+	12	10
-	+	16	0
-	+	21	0
-	+	15	1
-	+	18	7
+> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/omap/omap-abe-dsp.c
+	"	2260	0
+	^	2260	1
+	.	2121	17
+	+	2182	8
+	+	2183	50
+	+	2122	0
+	+	2121	17
 
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/build_bluepoint.sh
-	"	6	16
-	^	6	17
-	.	6	16
+> /etc/ssh/ssh_config
+	"	1	0
+
+> ~/.ssh/known_hosts
+	"	1	0
+
+> ~/MPA3-JB/4AJ.2.1/x-loader/build_bluepoint.sh
+	"	1	0
+	^	3	2
+	.	3	1
 	+	3	1
-	+	5	23
-	+	6	16
+	+	5	13
+	+	3	1
 
 > ~/MPA3-JB/4AJ.2.1/u-boot/build_bluepoint.sh
 	"	1	0
@@ -372,13 +367,181 @@ $
 	+	6	9
 	+	3	1
 
-> ~/MPA3-JB/4AJ.2.1/x-loader/build_bluepoint.sh
+> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/build_bluepoint.sh
+	"	6	59
+	^	6	60
+	.	6	60
+	+	3	1
+	+	5	23
+	+	6	16
+	+	5	1
+	+	6	60
+
+> ~/MPA3-JB/4AJ.2.1/mydroid/build_bluepoint.sh
+	"	18	44
+	^	18	45
+	.	18	7
+	+	11	0
+	+	12	10
+	+	16	0
+	+	21	0
+	+	15	1
+	+	18	7
+	+	15	0
+	+	18	9
+	+	15	1
+	+	17	80
+	+	18	7
+
+> ~/android_make.out
+	"	31401	82
+
+> ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
+	"	51045	63
+
+> /etc/bash_completion.d/git-prompt
 	"	1	0
-	^	3	2
-	.	3	1
-	+	3	1
-	+	5	13
-	+	3	1
+
+> ~/MPA3-JB/4AJ.2.1/build_bluepoint
+	"	1	0
+
+> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+	"	974	0
+	^	974	0
+	.	969	7
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	26
+	+	1	15
+	+	1	0
+	+	1	1
+	+	1	27
+	+	1	2
+	+	1	15
+	+	1	55
+	+	1	9
+	+	1	0
+	+	1	42
+	+	1	13
+	+	1	13
+	+	1	0
+	+	1	31
+	+	1	58
+	+	1	30
+	+	1532	18
+	+	1	0
+	+	1	52
+	+	1	55
+	+	1	27
+	+	1	48
+	+	1	48
+	+	1	50
+	+	1	50
+	+	1	50
+	+	1	2
+	+	1	28
+	+	1398	22
+	+	1	1
+	+	335	0
+	+	373	51
+	+	430	30
+	+	431	30
+	+	433	31
+	+	431	30
+	+	434	31
+	+	653	2
+	+	543	0
+	+	618	0
+	+	647	0
+	+	647	0
+	+	748	0
+	+	748	0
+	+	752	34
+	+	1007	32
+	+	1022	18
+	+	1061	0
+	+	1131	43
+	+	1132	40
+	+	534	33
+	+	538	33
+	+	752	34
+	+	863	0
+	+	869	0
+	+	1108	19
+	+	1108	19
+	+	1109	2
+	+	1110	23
+	+	717	31
+	+	752	22
+	+	1131	26
+	+	1363	3
+	+	1131	16
+	+	1235	28
+	+	31	35
+	+	33	0
+	+	26	22
+	+	27	0
+	+	29	25
+	+	1266	0
+	+	61	0
+	+	961	2
+	+	1549	0
+	+	1554	0
+	+	966	7
+	+	962	11
+	+	969	7
+
+> ~/Downloads/git.omapzoom.org/4AJ.2.2/kernel/android-3.0/sound/soc/codecs/twl6040.c
+	"	915	12
+
+> ~/GitHub_Qiao-Huang_scripts/.git/COMMIT_EDITMSG
+	"	1	23
+	^	1	24
+	.	1	23
+	+	3	0
+	+	1	20
+	+	1	0
+	+	1	0
+	+	2	0
+	+	6	26
+	+	7	0
+	+	1	25
+	+	1	23
+
+> ~/MPA3-JB/4AJ.2.1/u-boot/include/configs/bluepoint.h
+	"	97	0
+	^	77	26
+	.	67	26
+	+	65	3
+	+	73	0
+	+	74	0
+	+	76	1
+	+	77	0
+	+	67	31
+	+	84	0
+	+	82	0
+	+	77	42
+	+	78	0
+	+	79	0
+	+	80	0
+	+	81	0
+	+	78	12
+	+	79	12
+	+	80	12
+	+	81	12
+	+	67	26
+
+> ~/MCD_MPA_ANDROID_1208/log-grep-ducati.txt
+	"	300	0
+
+> ~/MPA3-JB/4AJ.2.1/log-grep-ducati.txt
+	"	41	0
+
+> ~/MPA3-JB/4AJ.1.1/mydroid/device/ti/common-open/audio/audio_hw.c
+	"	1342	12
+	.	1342	0
+	+	1342	0
 
 > ~/MPA3-JB/4AJ.1.1/mydroid/build.sh
 	"	5	7
@@ -463,42 +626,6 @@ $
 
 > kernel/android-3.0/arch/arm/configs/bluepoint_defconfig
 	"	1	0
-
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
-	"	300	2
-	^	488	18
-	.	464	28
-	+	100	0
-	+	117	0
-	+	131	0
-	+	464	26
-	+	437	15
-	+	1594	0
-	+	1596	1
-	+	1593	27
-	+	1596	2
-	+	437	15
-	+	431	55
-	+	435	9
-	+	436	0
-	+	439	42
-	+	439	13
-	+	439	13
-	+	439	0
-	+	815	31
-	+	436	58
-	+	437	30
-	+	2153	18
-	+	439	0
-	+	431	52
-	+	436	55
-	+	437	27
-	+	464	48
-	+	464	48
-	+	466	50
-	+	467	50
-	+	469	50
-	+	464	28
 
 > ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/arch/arm/mach-omap2/remoteproc.c
 	"	246	4
@@ -655,20 +782,6 @@ $
 	+	202	0
 	+	233	0
 
-> ~/GitHub_Qiao-Huang_scripts/.git/COMMIT_EDITMSG
-	"	1	62
-	^	1	63
-	.	1	62
-	+	3	0
-	+	1	20
-	+	1	0
-	+	1	0
-	+	2	0
-	+	6	26
-	+	7	0
-	+	1	25
-	+	1	62
-
 > ~/.bash_logout
 	"	14	66
 	^	14	67
@@ -716,9 +829,6 @@ $
 	+	94	1
 	+	95	1
 	+	94	1
-
-> ~/MPA3-JB/4AJ.2.1/build_bluepoint
-	"	10	0
 
 > ~/GitHub_Qiao-Huang_files/.git/COMMIT_EDITMSG
 	"	1	30
@@ -888,9 +998,6 @@ $
 
 > /etc/bash_completion.d/git
 	"	51	0
-
-> /etc/bash_completion.d/git-prompt
-	"	1	0
 
 > /etc/bash.bashrc
 	"	52	9
@@ -1494,78 +1601,4 @@ $
 	+	1	18
 
 > ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/svn-commit.tmp
-	"	1	0
-
-> ~/MPA3-JB/4AJ.2.1/mydroid/mpa3-rootfs-history.txt
-	"	38	0
-	^	38	0
-	.	39	8
-	+	11	0
-	+	11	0
-	+	11	0
-	+	22	0
-	+	46	0
-	+	22	18
-	+	26	15
-	+	29	41
-	+	32	41
-	+	36	49
-	+	39	8
-
-> ~/MPA3-JB/4AJ.2.1/kernel/svn-commit.tmp
-	"	4	19
-	^	4	20
-	.	1	18
-	+	1	18
-
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/mpa3-kernel-history.txt
-	"	49	11
-	^	49	12
-	.	42	4
-	+	20	0
-	+	21	18
-	+	23	15
-	+	24	14
-	+	28	35
-	+	29	9
-	+	31	0
-	+	34	63
-	+	39	53
-	+	40	0
-	+	34	0
-	+	35	0
-	+	36	0
-	+	37	0
-	+	38	0
-	+	39	0
-	+	34	0
-	+	35	0
-	+	36	0
-	+	37	0
-	+	38	0
-	+	39	0
-	+	42	0
-	+	32	0
-	+	29	0
-	+	26	0
-	+	24	0
-	+	40	0
-	+	42	4
-
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/include/bsp_version.h
-	"	7	24
-	^	7	25
-	.	7	24
-	+	7	24
-
-> ~/MPA3-Android-4AJ.1.1/mydroid/external/omapconf/statcoll/sci.h
-	"	54	20
-	^	54	21
-	.	54	20
-	+	54	20
-
-> omapconf/Android.mk
-	"	1	0
-
-> ~/MPA3-Android-4AJ.1.1/mydroid/build.sh
 	"	1	0

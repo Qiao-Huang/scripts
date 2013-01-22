@@ -1,440 +1,3 @@
-./build_bluepoint 
-./build_bluepoint eng
-cp bin/emmc_files/bluepoint_eng/* /newhome/qian/www/Bin_MPA3/
-cd /newhome/qian/Downloads/
-ls
-less OMAP4-TDD/.svn/entries 
-cd /newhome/qian/MPA3-JB/4AJ.2.1/
-ls
-vim kernel/android-3.0/arch/arm/configs/bluepoint_defconfig 
-vim mydroid/device/ti/common-open/audio/audio_hw.c 
-./build_bluepoint eng
-cp bin/emmc_files/bluepoint_eng/* /newhome/qian/www/Bin_MPA3/
-vim mydroid/device/ti/common-open/audio/audio_hw.c 
-./build_bluepoint eng
-cp bin/emmc_files/bluepoint_eng/* /newhome/qian/www/Bin_MPA3/
-vim mydroid/device/ti/common-open/audio/audio_hw.c 
-./build_bluepoint eng
-cp bin/emmc_files/bluepoint_eng/* /newhome/qian/www/Bin_MPA3/
-vim mydroid/device/ti/common-open/audio/audio_hw.c 
-exit
-ls
-cd Downloads/
-ls
-cd git.omapzoom.org/
-ls
-cd 4AJ.1.1/
-ls
-cd mydroid/
-ls
-export MYDROID=`pwd`
-repo init -u git://git.omapzoom.org/platform/omapmanifest.git -b 27.x -m RLS4AJ.1.1_JellyBean.xml
-ls
-cd Downloads/
-ls
-cd git.omapzoom.org/4AJ.1.1/mydroid/
-repo init -u git://git.omapzoom.org/platform/omapmanifest.git -b 27.x -m RLS4AJ.1.1_JellyBean.xml
-exit
-meld 
-clear
-exit
-ping help.ubuntu.com
-meld
-ifconfig
-man ifconfig
-ifconfig -a
-man dns
-dns
-dnsdomainname 
-dnsmasq 
-man dnsmasq
-less /etc/resolv.conf 
-less /etc/resolvconf/update-libc.d/avahi-daemon 
-less /etc/network/interfaces 
-bind 
-man bind
-ping 10.0.0.90
-ping 10.0.0.91
-ping 74.125.128.94
-tracert 74.125.128.94
-tracert6 74.125.128.94
-sudo apt-get install ndisc6
-ping www.google.com.tw
-less /etc/resolv.conf 
-ifconfig
-sudo vim /etc/resolv.conf 
-ping www.google.com
-less /etc/networks
-sudo less /etc/sysctl.d/10-network-security.conf 
-sudo /etc/init.d/network-manager 
-sudo /etc/init.d/network-manager help
-sudo service /etc/init.d/network-manager help
-sudo service network-manager help
-service network-manager help
-sudo /etc/init.d/networking help
-sudo /etc/init.d/networking restart
-ping www.google.com
-ping help.ubuntu.com
-grep -rn <NULL> ./MPA3-JB/4AJ.2.1/u-boot/
-grep -rn "<NULL>" ./MPA3-JB/4AJ.2.1/u-boot/
-sudo top
-ping www.google.com
-sudo vim /etc/network/interfaces 
-ping www.google.com.tw
-sudo su
-sudo vim /etc/network/interfaces 
-w
-mesg 
-wall 
-echo are you there? | w
-write powerful
-w
-shutdown -r 0
-sudo shutdown -r 0
-exit
-ping www.google.com
-vim /etc/network/interfaces 
-ping www.google.com
-ping 74.125.128.94
-ping www.google.com.tw
-sudo vim /etc/resolv.conf 
-sudo service network restart
-sudo service networking restart
-sudo service networking help
-sudo service networking force-reload
-service networking restart
-sudo /etc/init.d/networking  restart
-ping www.google.com.tw
-ls
-cd Downloads/
-ls
-cd git.omapzoom.org/4AJ.1.1/mydroid/
-ls
-screen
-screen -ls
-exit
-ls
-ping www.google.com.tw
-ping us.archive.ubuntu.com
-ping usitwproxy.usi.com.tw
-traceroute6 www.google.com.tw
-ping www.google.com.tw
-top
-sudo apt-get hellp
-sudo apt-get help
-sudo apt-get proxy
-sudo su
-w
-sudo shutdown -r 0
-cd Downloads/MPA3-JB/4AJ.1.1/mydroid/
-ls
-cd ../../../
-ls
-cd 4AJ.1.1/mydroid/
-ls
-sudo apt-get install lib32readline5-dev libstdc++6 lib32z1 lib32z1-dev ia32-libs g++-multilib libx11-dev libncurses5-dev uboot-mkimage
-cd ..
-ls
-cd ..
-ls
-cd git.omapzoom.org/
-ls
-cd 4AJ.1.1/
-ls
-cd mydroid/
-ls
-repo init -u git://git.omapzoom.org/platform/omapmanifest.git -b 27.x -m RLS4AJ.1.1_JellyBean.xml && repo sync
-ping gerrit.googlesource.com
-echo $http_proxy
-echo $https_proxy
-echo $ftp_proxy
-export https_proxy=http://10.0.0.96:80/
-echo $https_proxy
-repo init -u git://git.omapzoom.org/platform/omapmanifest.git -b 27.x -m RLS4AJ.1.1_JellyBean.xml && repo sync
-smbstatus
-smbd
-smbcontrol 
-smbcontrol dump-domain-list
-cd ..
-ls
-git clone git://git.omapzoom.org/kernel/omap.git kernel/android-3.0
-dmesg
-sudo dmesg
-exit
-echo $http_proxy
-sudo apt-get update
-ping us.archive.ubuntu.com
-sudo apt-get update
-ping us.archive.ubuntu.com
-screen -r
-screen
-sudo dmesg 
-ls
-ping www.google.com
-echo $http_proxy
-w
-service networking force-reload
-service networking
-sudo /etc/init.d/networking force-reload
-echo $http_proxy
-cd Downloads/git.omapzoom.org/4AJ.1.1/mydroid/
-repo init -u git://git.omapzoom.org/platform/omapmanifest.git -b 27.x -m RLS4AJ.1.1_JellyBean.xml
-env
-vim /newhome/qian/.bashrc 
-repo init -u git://git.omapzoom.org/platform/omapmanifest.git -b 27.x -m RLS4AJ.1.1_JellyBean.xml
-unset http_proxy
-echo $http_proxy
-repo init -u git://git.omapzoom.org/platform/omapmanifest.git -b 27.x -m RLS4AJ.1.1_JellyBean.xml
-screen
-ping 140.138.145.242
-ping tw.archive.ubuntu.com
-sudo su
-clear
-cd ~
-clear
-sudo apt-get update
-clear
-sudo apt-get update
-sudo /etc/init.d/networking
-sudo /etc/init.d/networking restart
-sudo apt-get update
-sudo vim /etc/apt/apt.conf
-sudo vim /etc/apt/apt.conf.d/proxy 
-sudo rm /etc/apt/apt.conf.d/proxy 
-screen -r
-logout
-clear
-ls
-cd MPA3-JB/
-ls
-cd 4AJ.2.1/u-boot/
-cd ..
-vim u-boot/board/bluepoint/mmc.c 
-ls
-./build_bluepoint 
-./build_bluepoint eng
-cp bin/emmc_files/bluepoint_eng/* /newhome/qian/www/Bin_MPA3/
-cd u-boot/
-ls
-svn st
-ls
-vim include/bsp_version.h 
-vim mpa3-u-boot-history.txt 
-make clean
-make distclean
-svn st
-svn up
-svn ci board/bluepoint/mmc.c 
-svn ci include/bsp_version.h 
-svn ci mpa3-u-boot-history.txt 
-vim mpa3-u-boot-history.txt 
-screen
-screen -ls
-screen -r
-screen -rd
-screen -r pts-0.MandN-TT05
-screen -ls
-screen -r pts-2.MandN-TT05
-screen -ls
-logout
-ls
-repo sync
-ls
-screen -rd
-screen -r pts-2.MandN-TT05
-screen -ls
-screen -r pts-2.MandN-TT05
-screen -r pts-0.MandN-TT05
-screen -ls
-screen -r
-screen -ls
-logout
-ls
-cd Downloads/
-ls
-meld
-logout
-ls
-screen -ls
-screen -r
-ls
-cd my_scripts/
-ls
-cd ..
-ls
-logout
-logout
-ls
-meld
-logout
-ls
-cd ..
-ls
-exit
-cd ..
-ls
-cd Downloads/
-ls
-cd git.omapzoom.org/
-ls
-mkdir 27.G.3
-ls
-cd 27.G.3/
-mkdir kernel
-git clone git://git.omapzoom.org/kernel/omap.git kernel/android-2.6.35 && cd kernel/android-2.6.35 && git checkout 0ef939d88258eec69c63f4281783feccd52836ac
-ls
-htags -aFghInosxv --show-position --tabs 3 &
-ls
-mv HTML/ HTML-TI_L27.G.5_kernel/
-ls
-mv HTML-TI_L27.G.5_kernel/ /newhome/qian/www/
-ls
-rm G*
-ls
-cd ..
-ls
-cd ..
-ls
-meld
-sudo meld
-exit
-ls
-vim board/bluepoint/mmc.c 
-cd ..
-ls
-./build_bluepoint eng
-cp bin/emmc_files/bluepoint_eng/* /newhome/qian/www/Bin_MPA3/
-vim u-boot/board/bluepoint/mmc.c 
-./build_bluepoint eng
-cp bin/emmc_files/bluepoint_eng/* /newhome/qian/www/Bin_MPA3/
-ls /newhome/qian/www/Bin_MPA3/
-ls -l /newhome/qian/www/Bin_MPA3/
-vim u-boot/common/cmd_fastboot.c 
-./build_bluepoint eng
-cp bin/emmc_files/bluepoint_eng/* /newhome/qian/www/Bin_MPA3/
-vim board/bluepoint/mmc.c 
-vim u-boot/board/bluepoint/mmc.c 
-./build_bluepoint eng
-cp bin/emmc_files/bluepoint_eng/* /newhome/qian/www/Bin_MPA3/
-ls
-cd u-boot/
-make clean ; make distclean
-svn st
-vim board/bluepoint/mmc.c
-vim include/bsp_version.h 
-vim mpa3-u-boot-history.txt 
-svn ci common/cmd_fastboot.c 
-svn ci include/bsp_version.h 
-less mpa3-u-boot-history.txt 
-svn ci mpa3-u-boot-history.txt 
-vim mpa3-u-boot-history.txt 
-cd ..
-ls
-cd /newhome/qian/Downloads/
-ls
-cd MPA3-JB/
-ls
-cd 4AJ.2.1/
-ls
-svn up &
-cd kernel/android-3.0/
-ls
-htags -aFghInosxv --show-position --tabs 3
-mv HTML/ HTML-MOTO_4AJ.2.1_kernel
-mv HTML-MOTO_4AJ.2.1_kernel/ /newhome/qian/www/
-ls
-rm G*
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-cd git.omapzoom.org/
-ls
-cd RLS4AJ.2.1_JellyBean/
-ls
-cd ..
-ls
-cd 4AJ.2.2/
-ls
-ls -al
-git clone git://git.omapzoom.org/kernel/omap.git kernel/android-3.0 && cd kernel/android-3.0 && git checkout 1f21f8ed30c1d6abd029b67d17106042930a93d2
-sudo apt-get update
-man apt-get
-sudo apt-get update
-ls
-repo sync
-git checkout 1f21f8ed30c1d6abd029b67d17106042930a93d2
-curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
-mkdir ~/bin/
-curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
-echo $PATH
-which repo
-curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > /usr/bin/repo
-sudo curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > /usr/bin/repo
-sudo chmod 777 /usr/bin/repo
-sudo curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > /usr/bin/repo
-which repo
-repo -v
-ls -al /usr/bin/repo
-git checkout 1f21f8ed30c1d6abd029b67d17106042930a93d2
-ls
-htags -aFghInosxv --show-position --tabs 3
-ls
-mv HTML/ HTML-TI_4AJ.2.2_kernel
-mv HTML-TI_4AJ.2.2_kernel/ /newhome/qian/www/
-rm G*
-ls
-cd ..
-ls
-cd mydroid/
-ls
-cd ..
-ls
-cd ..
-ls
-cd MPA3-JB/
-ls
-ls -al
-cd 4AJ.2.1/
-ls
-vim -R env_setup 
-cd mydroid/
-ls
-vim -R build/envsetup.sh 
-vim -R /etc/bash_completion
-vim -R /etc/bash_completion.d/git
-ls
-cd /newhome/qian/Downloads/
-ls
-cd omapconf/
-ls
-ls -al
-git pull
-clear
-cd /newhome/qian/Downloads/
-ls
-cd MPA3-JB/
-ls
-cd 4AJ.2.1/
-ls
-svn up
-grep -rn "Partition:" ./u-boot/
-ls
-cd ..
-ls
-cd ..
-ls
-cd git.omapzoom.org/
-ls
-mkdir -p 4AJ.2.2; cd 4AJ.2.2
-ls
-repo init -u git://git.omapzoom.org/platform/omapmanifest.git -b 27.x -m RLS4AJ.2.2_JellyBean.xml && repo sync
-repo sync
 ls
 
 repo sync
@@ -1990,4 +1553,448 @@ less omapconf.c
 less README.md 
 echo $CC
 less Makefile 
+exit
+w
+ls
+cd /newhome/qian/Downloads/
+ls
+cd git.omapzoom.org/
+ls
+cd sysbios-rpmsg/
+tree ./
+ls
+cd /newhome/qian/MPA3-JB/
+ls
+cd 4AJ.2.1/
+cd mydroid/prebuilt/linux-x86/toolchain/
+ls
+cd arm-eabi-4.4.3/
+ls
+cd arm-eabi/
+ls
+cd bin/
+ls
+cd ../
+ls
+cd ..
+ls
+cd bin/
+ls
+pwd
+ls
+cd ..
+ls
+cd include/
+ls
+cd ../lib
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ../../
+ls
+less env_setup 
+cd mydroid/prebuilt/linux-x86/toolchain/
+ls
+cd arm-eabi-4.4.3/bin/
+ls
+./arm-eabi-gcc
+./arm-eabi-gcc -print-file-name=include
+ls ./../lib/gcc/arm-eabi/4.4.3/include/
+ls ./../lib/gcc/arm-eabi/4.4.3/android/
+ls ./../lib/gcc/arm-eabi/4.4.3/include
+grep -rn "ctype" ./../lib/gcc/arm-eabi/4.4.3/include/
+ls /newhome/qian/arm-2010q1/bin/arm-none-linux-gnueabi-gcc
+/newhome/qian/arm-2010q1/bin/arm-none-linux-gnueabi-gcc
+/newhome/qian/arm-2010q1/bin/arm-none-linux-gnueabi-gcc -print-file-name=include
+ls
+cd ../../../
+ls
+cd ../../
+ls
+exit
+cd MPA3-JB/4AJ.2.1/
+ls
+grep -rn "ducati" ./kernel/
+ls
+cd ~
+ls
+less hardcopy.1 
+less screenlog.1 
+cd MPA3-JB/
+ls
+cd 4AJ.2.1/
+grep -rn "ducati" ./kernel/ > log-grep-ducati.txt
+less log-grep-ducati.txt 
+vim -R log-grep-ducati.txt 
+grep -rn "DUCATI" ./kernel/
+grep -rn "DUCATI" ./kernel/ > log-grep-ducati.txt 
+grep -rn "omap_device_assert_hardreset" ./kernel/
+cd ..
+ls
+cd /newhome/qian/Downloads/
+ls
+cd git.omapzoom.org/
+ls
+git clone git://git.omapzoom.org/repo/sysbios-rpmsg.git
+ls
+cd sysbios-rpmsg/
+ls
+cd src/
+ls
+cd ti/
+ls
+cd ..
+ls
+grep -rn "ducati" ./
+grep -rn "4430" ./
+ls
+cd src/
+ls
+cd host/
+ls
+cd ..
+ls
+cd ti/
+l
+tree ./
+cd /newhome/qian/MPA3-JB/4AJ.2.1/
+vim u-boot/include/configs/bluepoint.h 
+cd /newhome/qian/omapconf/
+ls
+git fetch
+git pull
+ls
+less README.md 
+less Makefile 
+less README.md 
+make ARCH=arm CROSS_COMPILE=/newhome/qian/MPA3-JB/4AJ.2.1/mydroid/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi- omapconf
+exit
+ls
+cd MCD_MPA_ANDROID_1208/
+ls
+grep -rn "ducati" ./kernel/
+less /newhome/qian/hardcopy.0
+grep -rn "ducati" ./kernel/ > log-grep-ducati.txt
+vim -R log-grep-ducati.txt 
+grep -rn "DUCATI" ./kernel/
+grep -rn "DUCATI" ./kernel/ > log-grep-ducati.txt 
+vim -R log-grep-ducati.txt 
+grep -rn "omap_device_assert_hardreset" ./kernel/
+cd /newhome/qian/omapconf/
+ls
+less README.md 
+cd ../
+exit
+w
+top
+wget      
+Login: qian
+Linux MandN-TT05 2.6.32-45-generic #101-Ubuntu SMP Mon Dec 3 15:39:38 UTC 2012 x86_64 GNU/
+Ubuntu 10.04.4 LTS
+Welcome to Ubuntu!
+4 packages can be updated.
+3 updates are security updates.
+New release 'precise' available.
+Run 'do-release-upgrade' to upgrade to it.
+*** System restart required ***
+Last login: Tue Jan 15 10:01:47 2013 from 172.18.74.80
+-bash: /usr/lib/git-core/git-sh-prompt: No such file or directory
+qian@MandN-TT05:~$ w
+USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT
+qian     pts/2    172.18.74.80     10:01   13:24   0.56s  0.56s -bash
+tw012723 pts/4    :11.0            Fri14    3days  0.41s  0.41s /bin/bash
+tw012723 pts/5    :11.0            Fri17   23:32m  0.42s  0.42s bash
+tw012723 pts/8    :11.0            Mon10   23:30m  0.37s  6:00  gnome-terminal
+qian     pts/3    172.18.74.80     10:01    0.00s  0.54s  0.02s w
+qian@MandN-TT05:~$ top
+top - 10:49:22 up 24 days, 23:08,  5 users,  load average: 0.10, 0.14, 0.12
+Tasks: 716 total,   1 running, 715 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8186268k total,  7971844k used,   214424k free,  2446548k buffers
+Swap:  3998712k total,   740280k used,  3258432k free,   341536k cached
+12951 qian      20   0 19736 1944 1072 R    1  0.0   0:12.37 top
+Login: qian
+Linux MandN-TT05 2.6.32-45-generic #101-Ubuntu SMP Mon Dec 3 15:39:38 UTC 2012 x86_64 GNU/
+Ubuntu 10.04.4 LTS
+Welcome to Ubuntu!
+4 packages can be updated.
+3 updates are security updates.
+wget http://git.omapzoom.org/?p=kernel/omap.git;a=blob_plain;f=sound/soc/codecs/twl6040.c;hb=3cdd08ca36770fd1090a75db1484a7ac5b097780
+ls
+rm index.html\?p\=kernel%2Fomap.git 
+geany
+cd MPA3-JB/4AJ.2.1/
+vim kernel/android-3.0/sound/soc/codecs/twl6040.c
+ls
+cd GitHub_Qiao-Huang_scripts/
+git ci -a
+git commit -a
+git push
+cd ~
+ls
+cd MPA3-JB/
+ls
+cd 4AJ.2.1/
+ls
+grep -rn "dma" ./kernel/android-3.0/sound/
+grep -rn "dma" ./kernel/android-3.0/sound/soc/
+grep -rn "dma" ./kernel/android-3.0/sound/soc/omap/
+diff -NEbBwpyur /newhome/qian/Downloads/git.omapzoom.org/4AJ.1.1/kernel/kernel/android-3.0/sound/soc/codecs/twl6040.c /newhome/qian/Downloads/git.omapzoom.org/4AJ.2.2/kernel/android-3.0/sound/soc/codecs/twl6040.c 
+diff -NEbBwpur /newhome/qian/Downloads/git.omapzoom.org/4AJ.1.1/kernel/kernel/android-3.0/sound/soc/codecs/twl6040.c /newhome/qian/Downloads/git.omapzoom.org/4AJ.2.2/kernel/android-3.0/sound/soc/codecs/twl6040.c 
+diff -NEbBwpyr /newhome/qian/Downloads/git.omapzoom.org/4AJ.1.1/kernel/kernel/android-3.0/sound/soc/codecs/twl6040.c /newhome/qian/Downloads/git.omapzoom.org/4AJ.2.2/kernel/android-3.0/sound/soc/codecs/twl6040.c 
+diff -NEbBpyur /newhome/qian/Downloads/git.omapzoom.org/4AJ.1.1/kernel/kernel/android-3.0/sound/soc/codecs/twl6040.c /newhome/qian/Downloads/git.omapzoom.org/4AJ.2.2/kernel/android-3.0/sound/soc/codecs/twl6040.c 
+diff -NEbBwyur /newhome/qian/Downloads/git.omapzoom.org/4AJ.1.1/kernel/kernel/android-3.0/sound/soc/codecs/twl6040.c /newhome/qian/Downloads/git.omapzoom.org/4AJ.2.2/kernel/android-3.0/sound/soc/codecs/twl6040.c 
+diff -NEbBwpur /newhome/qian/Downloads/git.omapzoom.org/4AJ.1.1/kernel/kernel/android-3.0/sound/soc/codecs/twl6040.c /newhome/qian/Downloads/git.omapzoom.org/4AJ.2.2/kernel/android-3.0/sound/soc/codecs/twl6040.c 
+diff -NEbBw /newhome/qian/Downloads/git.omapzoom.org/4AJ.1.1/kernel/kernel/android-3.0/sound/soc/codecs/twl6040.c /newhome/qian/Downloads/git.omapzoom.org/4AJ.2.2/kernel/android-3.0/sound/soc/codecs/twl6040.c 
+cp /newhome/qian/Downloads/git.omapzoom.org/4AJ.2.2/kernel/android-3.0/sound/soc/codecs/twl6040.c ./kernel/android-3.0/sound/soc/codecs/
+ls
+screen -r
+screen
+./build_bluepoint userdebug
+vim kernel/android-3.0/sound/soc/codecs/twl6040.c
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/*.img /newhome/qian/www/Bin_MPA3/
+cp bin/emmc_files/bluepoint_userdebug/u-boot.bin /newhome/qian/www/Bin_MPA3/
+cp bin/emmc_files/bluepoint_userdebug/MLO /newhome/qian/www/Bin_MPA3/
+w
+dmesg
+w
+sudo shutdown -r 0
+ls
+./build_bluepoint userdebug
+ls -al ./bin/emmc_files/bluepoint_userdebug/
+ls -al ./kernel/android-3.0/arch/arm/boot/
+./build_bluepoint userdebug
+vim -R /newhome/qian/Downloads/git.omapzoom.org/4AJ.2.2/kernel/android-3.0/sound/soc/codecs/twl6040.c 
+git log
+cd ../
+ls
+git log
+cd /newhome/qian/Downloads/
+cd git.omapzoom.org/4AJ.2.2/
+ls
+cd kernel/
+git log
+cd android-3.0/
+git log
+git getch
+git fetch
+git checkout cda0054a3304d5fb744e4ff26f5f72b4fcf1a572
+git branch --contains cda0054a3304d5fb744e4ff26f5f72b4fcf1a572
+git branch 
+git show cda0054a3304d5fb744e4ff26f5f72b4fcf1a572
+git help branch
+git help
+git help branch 
+git remote 
+git help remote
+git branch -r
+cd /newhome/qian/MPA3-JB/4AJ.2.1/
+ls
+vim kernel/android-3.0/sound/soc/codecs/twl6040.c
+./build_bluepoint userdebug
+dmesg
+exit
+cd Downloads/git.omapzoom.org/4AJ.2.2/kernel/android-3.0/
+git log --children 
+cd ..
+ls
+cd ..
+ls
+mkdir -p 4AJ.2.1
+cd 4AJ.2.1
+ls
+git clone git://git.omapzoom.org/kernel/omap.git kernel/android-3.0 && cd kernel/android-3.0 && git checkout cda0054a3304d5fb744e4ff26f5f72b4fcf1a572
+ls
+git log --children | less
+ls
+cd Downloads/
+cd svn.usi/MPA3_JB/4AJ.2.1/
+ls
+svn up
+exit
+screen -r
+screen
+exit
+w
+top
+exit
+cd Downloads/git.omapzoom.org/4AJ.2.1/kernel/android-3.0/
+ls
+git checkout d26e89bb78b7cf79cae0367c0d97b27f767104a4 sound/soc/omap/abe/abe_firmware.c
+ls -al sound/soc/omap/abe/
+git checkout 6a8c30252b4d7635e55628e40240888da52b406c sound/soc/omap/omap-abe-dsp.c
+git checkout 7fa296822d23a91eaa203b0a4a5dfc7bcb110328 sound/soc/omap/omap-abe-dsp.c
+git checkout 7d4174b9934e56a2c6d32f2657bea9080e186352 sound/soc/omap/omap-abe.c
+git checkout 7d4174b9934e56a2c6d32f2657bea9080e186352 sound/soc/omap/sdp4430.c
+git checkout bbab911191738612a7a4b85907b7f69924857cf5 arch/arm/mach-omap2/board-44xx-power.c
+git checkout bbab911191738612a7a4b85907b7f69924857cf5 include/linux/mfd/twl6040-codec.h
+git checkout cfb8769ca18ac3209b8449111a32a454eb746ccb sound/soc/soc-dapm.c
+git checkout fffde60b0a45da6164b2c327f8e5b331e3ed73a7 drivers/misc/twl6040-vib.c
+git checkout 7d4174b9934e56a2c6d32f2657bea9080e186352 sound/*
+git checkout 7d4174b9934e56a2c6d32f2657bea9080e186352 sound/
+ls -al sound/
+ls -al sound/soc/codecs/twl6040.c
+cd /newhome/qian/MPA3-JB/
+ls
+svn help export
+ls
+svn help
+svn log
+ls
+svn help export
+cd 4AJ.2.1/
+mkdir ../4AJ.2.1-copy-1
+vim kernel/android-3.0/sound/soc/codecs/twl6040.c
+cd /newhome/qian/Downloads/svn.usi/MPA3_JB/4AJ.2.1/
+ls
+cd mydroid/
+make clean
+cd ../kernel/
+make clean; make distclean
+cd android-3.0/
+make clean; make distclean
+cd ../../x-loader/
+make clean; make distclean
+cd ../u-boot
+make clean; make distclean
+ls
+cd ../
+man rsync
+rsync -rRvul --no-implied-dirs --times ./* /newhome/qian/MPA3-JB/4AJ.2.1-copy-1/
+rsync -rRvul --no-implied-dirs --times ./* /newhome/qian/MPA3-JB/4AJ.2.1-copy-1/exit
+exit
+screen -r
+screen
+logout
+clear
+grep -rn "http_proxy" /etc/
+less /etc/environment 
+exit
+env
+grep -rn "git-sh-prompt" /etc/
+sudo /etc/bash_completion.d/git-prompt 
+sudo vim /etc/bash_completion.d/git-prompt 
+ls -al /usr/lib/git-core/
+ls -al /usr/lib/git-core/ | less
+sudo rm /etc/bash_completion.d/git-prompt 
+exit
+screen -r
+exit
+ls
+cd MPA3-JB/4AJ.2.1
+ls
+cd mydroid/out/target/product/bluepoint/
+ls
+ls -al
+cd ../../
+ls
+cd ../
+ls
+vim build_bluepoint.sh 
+cd ../
+ls
+cd logs/
+ls
+cd bluepoint_userdebug/
+ls
+less android_make.out 
+cd ../../
+ls
+git version
+vim build_bluepoint 
+./build_bluepoint userdebug
+ls -al mydroid/out/target/product/bluepoint/
+update-alternatives --config java
+top
+./build_bluepoint userdebug
+git version
+vim mydroid/build_bluepoint.sh 
+./build_bluepoint userdebug
+ls
+ls -al mydroid/out/target/product/bluepoint/
+vim -R logs/bluepoint_userdebug/android_make.out 
+cp logs/bluepoint_userdebug/android_make.out ~/
+exit
+ls
+cd MPA3-JB/4AJ.2.1
+ls
+less mydroid/build_bluepoint.sh 
+./build_bluepoint userdebug
+ls -al mydroid/out/target/product/bluepoint/
+screen -r
+screen
+exit
+grep -rn "Capture debugfs file" ./MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/
+grep -rn "Capture debugfs file" ./MPA3-JB/4AJ.2.1/kernel/android-3.0/
+grep -rn "Capture debugfs file" ./MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/
+grep -rn "Capture debugfs file" ./MPA3-JB/4AJ.2.1/kernel/android-3.0/fs/
+grep -rn "Capture debugfs file" ./MPA3-JB/4AJ.2.1/kernel/android-3.0/
+grep -rn "debugfs" ./MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/
+grep -rn "#include <linux/debugfs.h>" ./MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/
+grep -rn "PWM No Battery detected" ./MPA3-JB/4AJ.2.1/kernel/android-3.0/
+vim MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
+grep -rn "SDP4430" ./MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/
+grep -rn "SDP4430" ./MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/
+grep -rn "SDP4430" ./MPA3-JB/4AJ.2.1/kernel/android-3.0/fs/
+grep -rn "SDP4430" ./MPA3-JB/4AJ.2.1/kernel/android-3.0/kernel/
+grep -rn "debugfs.h" ./MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/
+grep -rn "twl6040-codec" ./MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/
+grep -rn "Failed to create" ./MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/
+cd MPA3-JB/4AJ.2.1/
+vim mydroid/device/ti/common-open/audio/audio_hw.c 
+exit
+ssh
+ssh qiao@172.18.233.142
+ssh 172.18.233.142
+ssh qiao@172.18.233.142
+exit
+s
+ssh
+ssh qiao@172.18.233.142
+sudo vim /etc/ssh/ssh_config 
+vim .ssh/known_hosts 
+vim /etc/ssh/ssh_config 
+man ssh_config
+exit
+ls
+cd MPA3-JB/
+ls
+cd 4AJ.2.1
+ls
+vim mydroid/build_bluepoint.sh 
+vim kernel/android-3.0/build_bluepoint.sh 
+vim u-boot/build_bluepoint.sh 
+vim x-loader/build_bluepoint.sh 
+vim kernel/android-3.0/sound/soc/omap/omap-abe-dsp.c
+./build_bluepoint userdebug
+ls -al mydroid/out/target/product/bluepoint/
+cp bin/emmc_files/bluepoint_userdebug/*.img /newhome/qian/www/Bin_MPA3/
+cp bin/emmc_files/bluepoint_userdebug/u-boot.bin /newhome/qian/www/Bin_MPA3/
+cp bin/emmc_files/bluepoint_userdebug/MLO /newhome/qian/www/Bin_MPA3/
+vim kernel/android-3.0/sound/soc/omap/omap-abe-dsp.c
+./build_bluepoint userdebug
+ls -al kernel/android-3.0/arch/arm/boot/
+cp bin/emmc_files/bluepoint_userdebug/*.img /newhome/qian/www/Bin_MPA3/
+cp bin/emmc_files/bluepoint_userdebug/u-boot.bin /newhome/qian/www/Bin_MPA3/
+cp bin/emmc_files/bluepoint_userdebug/MLO /newhome/qian/www/Bin_MPA3/
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/*.img /newhome/qian/www/Bin_MPA3/
+cp bin/emmc_files/bluepoint_userdebug/u-boot.bin /newhome/qian/www/Bin_MPA3/
+cp bin/emmc_files/bluepoint_userdebug/MLO /newhome/qian/www/Bin_MPA3/
+./build_bluepoint userdebug
+ls
+cp bin/emmc_files/bluepoint_userdebug/*.img /newhome/qian/www/Bin_MPA3/
+cp bin/emmc_files/bluepoint_userdebug/u-boot.bin /newhome/qian/www/Bin_MPA3/
+cp bin/emmc_files/bluepoint_userdebug/MLO /newhome/qian/www/Bin_MPA3/
+./build_bluepoint userdebug
+cp bin/emmc_files/bluepoint_userdebug/*.img /newhome/qian/www/Bin_MPA3/
+cp bin/emmc_files/bluepoint_userdebug/u-boot.bin /newhome/qian/www/Bin_MPA3/
+cp bin/emmc_files/bluepoint_userdebug/MLO /newhome/qian/www/Bin_MPA3/
 exit
