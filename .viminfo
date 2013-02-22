@@ -8,79 +8,84 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/BUI
+~MSle0~/rdp
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:wq
 :q
+:set nonu
+:wq
+:aqq
+:q!
+:set noexpandtab
+:set expandtab
+://
+:w
+:"q
 :Q
 :set nosmartindent
 :set noautoindent
 :set nocindent
 :set noindent
 :set noaudoindent
-:w
 :aq
-:q!
 :    copy_uImage_to_www.sh
-:set nonu
 :set autoindent
 :set nu
 
 # Search String History (newest to oldest):
-?/BUI
-?/USI
-?/while
+?/rdp
+?/ARM
+?/ANDROID
+?/svn:
+?/remote
+?/http
+?/volt
+?/android
+?/mydroid
+?/chmod
+?/COPY_FILE
+?/vendor
+?/aaaaaaa
+?/\/ti\/
+?/_COPY_FILE
+?/\/bin
+?//bin/
+?/COPY_FILES
+?/cp
+?/mmm
+?/builddate
+?/MPU_P1
+?/RAM
+?/SC_VER
+?/sci_master_addr
+?/mstr_addr_match
+?/55
+?/module
+?/pwrdm.h
+?/tiny
+?/omapconf
+?/copy
+?/DEFAULT
+?/.mk
+?/TINY_ANDROID
+?/======
+?/Ogg
+?/<=
+?/shell
+?/info
+?/dsafasdfa
+?/@echo
+?/echo
+?/print
 ?/for
-?/delay_power_threads
-?/start_thread
-?/thread_fn
-?/set_opp_mode
-?/opp_set
-?/Alive
-?/Keep
-?/unfinished
-?/Kill
-?/error
-?/**
-?/twl6040_write
-?/lp_constraints
-?/lp_rates
-?/twl.h
-?/hs_right_step
-?/get_revi
-?/SYSCLK_SEL
-?/vibrar_mux
-?/snd_soc_dapm_dai
-?/hw_param
-?/twl6040_power
-?/REV_ES1_
-?/get_trim
-?/vibra_en
-?/VIBSEL
-?/HSDACENA
-?/HSDRVMODE
-?/*
-?/vddhf
-?/close_output
-?/open_output_stream
-?/select_output_device
-?/SND
-?/SND_V
-?/dev
-?/set_route_by
-?/default
-?/adev_open
-?/MIXER_PLAYBACK_HS_DAC
-?/MIXER_PLAYBACK
-?/printf
-?/dump_mux
-?/trigger
-?/abcdfergg
-?/RECOVERY
+?/ducati
+?/USI
+?/cdc
+?/MCLK
+?/DEBUG
 
 # Expression History (newest to oldest):
 
@@ -89,1516 +94,1083 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	*******************************************************************************************************
-	[4AJ.2.1_U-BOOT-007]
-	*******************************************************************************************************
-	Date: 2012/12/24
-	 
-	Author: QianHao
-	
-	Description:
-	    1. Fix partition table limitation (<=16) on bluepoint
-	Solution:
-	    1. Modify value of MAX_PTN 16->32
-	
-	Modification Files:
-	    u-boot/include/bsp_version.h
-	    u-boot/mpa3-u-boot-history.txt
-	    
-	    1.
-	      u-boot/common/cmd_fastboot.c
-	    
-	    
-	Add Files:
-	
-	Remove Files:
-	
-	*******************************************************************************************************
-	[4AJ.2.1_U-BOOT-006]
-""1	LINE	0
+""0	LINE	0
+	export KERNEL_PATH=${YOUR_PATH}/kernel/android-3.0
+"1	LINE	0
 	
 "2	LINE	0
-	};
+	include $(BUILD_EXECUTABLE)
 "3	LINE	0
-		96000,
+	
 "4	LINE	0
-		48000,
+	LOCAL_MODULE_TAGS := optional
 "5	LINE	0
-		44100,
+	LOCAL_SHARED_LIBRARIES:= libcutils libutils libtinyalsa
 "6	LINE	0
-		32000,
+	LOCAL_MODULE := tinycap
 "7	LINE	0
-		16000,
+	LOCAL_SRC_FILES:= tinycap.c
 "8	LINE	0
-		8000,
+	LOCAL_C_INCLUDES:= external/tinyalsa/include
 "9	LINE	0
-	static unsigned int hp_rates[] = {
+	include $(CLEAR_VARS)
 "-	CHAR	0
-	 
+	#
 
 # File marks:
-'0  4027  78  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
-'1  4075  1  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
-'2  703  4  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
-'3  2260  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/omap/omap-abe-dsp.c
-'4  1  0  /etc/ssh/ssh_config
-'5  1  0  ~/.ssh/known_hosts
-'6  25  0  /etc/ssh/ssh_config
-'7  2211  41  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/omap/omap-abe-dsp.c
-'8  1  0  ~/MPA3-JB/4AJ.2.1/x-loader/build_bluepoint.sh
-'9  1  0  ~/MPA3-JB/4AJ.2.1/u-boot/build_bluepoint.sh
+'0  2706  1  ~/Desktop/list.txt
+'1  1  0  ~/Desktop/list.txt
+'2  6  23  ~/MC67_JB/4AJ.1.1/kernel/build_voltron.sh
+'3  50422  0  ~/MC67_JB/4AJ.1.1/logs/voltron_userdebug/android_make.out
+'4  57  0  ~/busybox-1.20.2/Makefile
+'5  698  18  ~/busybox-1.20.2/.config
+'6  6  6  /etc/viewvc/viewvc.conf
+'7  64  0  /etc/viewvc/viewvc.conf
+'8  1  0  ~/MC67_JB/4AJ.1.1/kernel/build_voltron.sh
+'9  31  0  ~/MC67_JB/4AJ.1.1/logs/voltron_userdebug/u-boot_make.out
 
 # Jumplist (newest first):
--'  4027  78  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  3834  28  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  1849  58  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  1487  48  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  50  0  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  1  0  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  4075  1  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  2782  3  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  703  4  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  846  4  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  800  38  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  350  4  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  61  44  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  14  73  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  1716  10  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  1590  73  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  1571  55  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  1563  4  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  1603  52  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  1508  16  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  1516  13  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  1519  15  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  1205  42  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  1179  15  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  727  42  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  711  43  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  310  13  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  67  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  311  18  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  1  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
--'  2260  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/omap/omap-abe-dsp.c
--'  43  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/omap/omap-abe-dsp.c
--'  1  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/omap/omap-abe-dsp.c
--'  1  0  /etc/ssh/ssh_config
--'  1  0  ~/.ssh/known_hosts
--'  25  0  /etc/ssh/ssh_config
--'  2211  41  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/omap/omap-abe-dsp.c
--'  1  0  ~/MPA3-JB/4AJ.2.1/x-loader/build_bluepoint.sh
--'  1  0  ~/MPA3-JB/4AJ.2.1/u-boot/build_bluepoint.sh
--'  6  59  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/build_bluepoint.sh
--'  1  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/build_bluepoint.sh
--'  18  44  ~/MPA3-JB/4AJ.2.1/mydroid/build_bluepoint.sh
--'  1  0  ~/MPA3-JB/4AJ.2.1/mydroid/build_bluepoint.sh
--'  31401  82  ~/android_make.out
--'  10806  0  ~/android_make.out
--'  1  0  ~/android_make.out
--'  5  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/build_bluepoint.sh
--'  51045  63  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  38752  72  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  8373  59  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  8297  43  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  8293  47  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  8205  59  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  8095  65  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  7968  47  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  7755  44  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  7643  44  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  7593  43  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  7444  43  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  5168  52  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  5138  58  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  5009  53  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  5008  53  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  4896  50  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  4853  51  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  4493  44  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  4447  43  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  4293  37  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  1  1  ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
--'  1  0  /etc/bash_completion.d/git-prompt
--'  278  0  ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
--'  974  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  375  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  321  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  292  19  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1976  10  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1918  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1917  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1916  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1915  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1914  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1583  2  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1046  2  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1042  2  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  972  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1549  41  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1843  29  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1697  30  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1577  30  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1535  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  272  42  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  251  20  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1551  9  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  1550  21  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  252  1  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  983  2  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  79  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
--'  34  0  ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
+-'  2706  1  ~/Desktop/list.txt
+-'  1  0  ~/Desktop/list.txt
+-'  6  23  ~/MC67_JB/4AJ.1.1/kernel/build_voltron.sh
+-'  1  0  ~/MC67_JB/4AJ.1.1/kernel/build_voltron.sh
+-'  50422  0  ~/MC67_JB/4AJ.1.1/logs/voltron_userdebug/android_make.out
+-'  1  0  ~/MC67_JB/4AJ.1.1/logs/voltron_userdebug/android_make.out
+-'  57  0  ~/busybox-1.20.2/Makefile
+-'  1  0  ~/busybox-1.20.2/Makefile
+-'  698  18  ~/busybox-1.20.2/.config
+-'  697  18  ~/busybox-1.20.2/.config
+-'  696  10  ~/busybox-1.20.2/.config
+-'  702  18  ~/busybox-1.20.2/.config
+-'  701  18  ~/busybox-1.20.2/.config
+-'  700  18  ~/busybox-1.20.2/.config
+-'  699  18  ~/busybox-1.20.2/.config
+-'  1  0  ~/busybox-1.20.2/.config
+-'  6  6  /etc/viewvc/viewvc.conf
+-'  510  20  /etc/viewvc/viewvc.conf
+-'  327  0  /etc/viewvc/viewvc.conf
+-'  321  2  /etc/viewvc/viewvc.conf
+-'  652  0  /etc/viewvc/viewvc.conf
+-'  1  0  /etc/viewvc/viewvc.conf
+-'  64  0  /etc/viewvc/viewvc.conf
+-'  31  0  ~/MC67_JB/4AJ.1.1/logs/voltron_userdebug/u-boot_make.out
+-'  1  0  ~/MC67_JB/4AJ.1.1/logs/voltron_userdebug/u-boot_make.out
+-'  99  0  ~/MC67_JB/4AJ.1.1/bootloaders/u-boot/Makefile
+-'  1  0  ~/MC67_JB/4AJ.1.1/bootloaders/u-boot/Makefile
+-'  1  0  ~/MC67_JB/4AJ.1.1/buildscripts/build_voltron
+-'  7  0  ~/MC67_JB/4AJ.1.1/bootloaders/u-boot/build_voltron.sh
+-'  1  0  ~/MC67_JB/4AJ.1.1/bootloaders/u-boot/build_voltron.sh
+-'  9  0  ~/MC67_JB/4AJ.1.1/env_setup
+-'  1  0  ~/MC67_JB/4AJ.1.1/env_setup
+-'  1  0  ~/MPA3-JB/4AJ.1.1/env.sh
+-'  13  37  ~/MPA3-JB/4AJ.2.1/env_setup
+-'  10  37  ~/MPA3-JB/4AJ.2.1/env_setup
+-'  1  0  ~/MPA3-JB/4AJ.2.1/env_setup
+-'  21  0  ~/MPA3-JB/4AJ.2.1/android_fs/build_voltron.sh
+-'  1  0  ~/MPA3-JB/4AJ.2.1/android_fs/build_voltron.sh
+-'  6  0  ~/MPA3-JB/4AJ.2.1/kernel/mkvoltronimg.sh
+-'  1  0  ~/MPA3-JB/4AJ.2.1/kernel/mkvoltronimg.sh
+-'  186  20  ~/MPA3-JB/4AJ.2.1/bootloaders/u-boot/Makefile
+-'  1  0  ~/MPA3-JB/4AJ.2.1/bootloaders/u-boot/Makefile
+-'  111  0  ~/MPA3-JB/4AJ.2.1/bootloaders/x-loader/Makefile
+-'  1  0  ~/MPA3-JB/4AJ.2.1/bootloaders/x-loader/Makefile
+-'  189  0  ~/MPA3-JB/4AJ.2.1/bootloaders/u-boot/Makefile
+-'  118  7  ~/MPA3-JB/4AJ.2.1/bootloaders/x-loader/Makefile
+-'  65  0  ~/MPA3-JB/4AJ.2.1/bootloaders/x-loader/Makefile
+-'  71  35  ~/MPA3-JB/4AJ.2.1/env_setup
+-'  23  30  ~/MPA3-JB/4AJ.2.1/env_setup
+-'  1  1  ~/MPA3-JB/4AJ.2.1/build_voltron
+-'  1  0  ~/MPA3-JB/4AJ.2.1/buildscripts/build_voltron
+-'  42  0  ~/MPA3-JB/4AJ.2.1/android_fs/build_voltron.sh
+-'  1  0  ~/MPA3-JB/4AJ.2.1/u-boot/build_voltron.sh
+-'  8  59  ~/MPA3-JB/4AJ.2.1/kernel/build_voltron.sh
+-'  1  0  ~/MPA3-JB/4AJ.2.1/kernel/build_voltron.sh
+-'  100  1  ~/MPA3-JB/4AJ.2.1/env_setup
+-'  14  0  ~/MPA3-JB/4AJ.2.1/buildscripts/build_voltron
+-'  1  0  ~/delta_411_v5/android_fs/device/motosln/MC40/full_MC40.mk
+-'  216  0  ~/delta_411_v5/android_fs/device/motosln/MC40/device.mk
+-'  1  0  ~/delta_411_v5/android_fs/device/motosln/MC40/device.mk
+-'  1  0  ~/delta_411_v5/android_fs/device/motosln/MC40/Android.mk
+-'  1  31  ~/.screenrc
+-'  111  4  ~/Demo-Case-2013-Feb/4AJ.2.1/mydroid/device/motosln/MC40/MC40.mk
+-'  1  0  ~/Demo-Case-2013-Feb/4AJ.2.1/mydroid/device/motosln/MC40/MC40.mk
+-'  1  0  ~/Demo-Case-2013-Feb/4AJ.2.1/mydroid/external/hello/Android.mk
+-'  1  0  ~/Demo-Case-2013-Feb/4AJ.2.1/mydroid/external/tinyalsa/Android.mk
+-'  24  0  ~/Demo-Case-2013-Feb/helloworld/Makefile
+-'  1  0  ~/Demo-Case-2013-Feb/helloworld/Makefile
+-'  10  0  ~/Demo-Case-2013-Feb/helloworld/helloworld.c
+-'  1  0  ~/Demo-Case-2013-Feb/helloworld/helloworld.c
+-'  35  0  ~/.screenrc
+-'  21  43  ~/Demo-Case-2013-Feb/4AJ.2.1/mydroid/build_MC40.sh
+-'  1  0  ~/Demo-Case-2013-Feb/4AJ.2.1/mydroid/build_MC40.sh
+-'  89  2  ~/Demo-Case-2013-Feb/4AJ.2.1/mydroid/device/motosln/MC40/MC40.mk
+-'  247  12  ~/Demo-Case-2013-Feb/4AJ.2.1/mydroid/device/motosln/MC40/MC40.mk
+-'  698  18  ~/busybox-1.20.2/.config
+-'  697  18  ~/busybox-1.20.2/.config
+-'  696  10  ~/busybox-1.20.2/.config
+-'  702  18  ~/busybox-1.20.2/.config
+-'  701  18  ~/busybox-1.20.2/.config
+-'  700  18  ~/busybox-1.20.2/.config
+-'  699  18  ~/busybox-1.20.2/.config
+-'  1  0  ~/busybox-1.20.2/.config
+-'  6  6  /etc/viewvc/viewvc.conf
+-'  510  20  /etc/viewvc/viewvc.conf
+-'  327  0  /etc/viewvc/viewvc.conf
+-'  321  2  /etc/viewvc/viewvc.conf
+-'  652  0  /etc/viewvc/viewvc.conf
+-'  1  0  /etc/viewvc/viewvc.conf
+-'  64  0  /etc/viewvc/viewvc.conf
+-'  31  0  ~/MC67_JB/4AJ.1.1/logs/voltron_userdebug/u-boot_make.out
+-'  1  0  ~/MC67_JB/4AJ.1.1/logs/voltron_userdebug/u-boot_make.out
+-'  99  0  ~/MC67_JB/4AJ.1.1/bootloaders/u-boot/Makefile
+-'  1  0  ~/MC67_JB/4AJ.1.1/bootloaders/u-boot/Makefile
+-'  1  0  ~/MC67_JB/4AJ.1.1/buildscripts/build_voltron
+-'  7  0  ~/MC67_JB/4AJ.1.1/bootloaders/u-boot/build_voltron.sh
+-'  1  0  ~/MC67_JB/4AJ.1.1/bootloaders/u-boot/build_voltron.sh
+-'  9  0  ~/MC67_JB/4AJ.1.1/env_setup
 
 # History of marks within files (newest to oldest):
 
-> ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/audio/audio_hw.c
-	"	4027	78
-	^	4027	79
-	.	4027	78
-	+	24	0
-	+	23	20
-	+	24	27
-	+	23	2
-	+	24	2
-	+	4020	142
-	+	351	57
-	+	350	6
-	+	4020	46
-	+	179	8
-	+	183	8
-	+	184	47
-	+	185	45
-	+	186	7
-	+	550	11
-	+	563	10
-	+	551	5
-	+	554	0
-	+	553	19
-	+	555	6
-	+	562	8
-	+	555	0
-	+	556	0
-	+	557	0
-	+	558	0
-	+	559	0
-	+	560	0
-	+	561	0
-	+	562	0
-	+	578	4
-	+	582	6
-	+	578	8
-	+	582	14
-	+	582	0
-	+	579	0
-	+	580	7
-	+	581	8
-	+	582	6
-	+	584	0
-	+	598	10
-	+	583	10
-	+	607	10
-	+	599	6
-	+	606	7
-	+	601	0
-	+	605	0
-	+	600	7
-	+	601	8
-	+	602	5
-	+	603	5
-	+	604	8
-	+	605	8
-	+	606	7
-	+	607	0
-	+	599	4
-	+	602	4
-	+	603	4
-	+	606	4
-	+	354	1
-	+	353	53
-	+	403	14
-	+	428	0
-	+	550	10
-	+	552	4
-	+	563	0
-	+	578	10
-	+	583	0
-	+	598	10
-	+	607	0
-	+	4022	17
-	+	4025	65
-	+	4026	50
-	+	4027	78
-
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/drivers/power/pwm.c
-	"	703	4
-	^	311	19
-	.	634	18
-	+	634	18
-
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/omap/omap-abe-dsp.c
-	"	2260	0
-	^	2260	1
-	.	2121	17
-	+	2182	8
-	+	2183	50
-	+	2122	0
-	+	2121	17
-
-> /etc/ssh/ssh_config
-	"	1	0
-
-> ~/.ssh/known_hosts
-	"	1	0
-
-> ~/MPA3-JB/4AJ.2.1/x-loader/build_bluepoint.sh
-	"	1	0
-	^	3	2
-	.	3	1
-	+	3	1
-	+	5	13
-	+	3	1
-
-> ~/MPA3-JB/4AJ.2.1/u-boot/build_bluepoint.sh
-	"	1	0
-	^	3	2
-	.	3	1
-	+	3	1
-	+	6	9
-	+	3	1
-
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/build_bluepoint.sh
-	"	6	59
-	^	6	60
-	.	6	60
-	+	3	1
-	+	5	23
-	+	6	16
-	+	5	1
-	+	6	60
-
-> ~/MPA3-JB/4AJ.2.1/mydroid/build_bluepoint.sh
-	"	18	44
-	^	18	45
-	.	18	7
-	+	11	0
-	+	12	10
-	+	16	0
-	+	21	0
-	+	15	1
-	+	18	7
-	+	15	0
-	+	18	9
-	+	15	1
-	+	17	80
-	+	18	7
-
-> ~/android_make.out
-	"	31401	82
-
-> ~/MPA3-JB/4AJ.2.1/logs/bluepoint_userdebug/android_make.out
-	"	51045	63
-
-> /etc/bash_completion.d/git-prompt
-	"	1	0
-
-> ~/MPA3-JB/4AJ.2.1/build_bluepoint
-	"	1	0
-
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/twl6040.c
-	"	974	0
-	^	974	0
-	.	969	7
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	26
-	+	1	15
-	+	1	0
-	+	1	1
-	+	1	27
-	+	1	2
-	+	1	15
-	+	1	55
-	+	1	9
-	+	1	0
-	+	1	42
-	+	1	13
-	+	1	13
-	+	1	0
-	+	1	31
-	+	1	58
-	+	1	30
-	+	1532	18
-	+	1	0
-	+	1	52
-	+	1	55
-	+	1	27
-	+	1	48
-	+	1	48
-	+	1	50
-	+	1	50
-	+	1	50
-	+	1	2
-	+	1	28
-	+	1398	22
-	+	1	1
-	+	335	0
-	+	373	51
-	+	430	30
-	+	431	30
-	+	433	31
-	+	431	30
-	+	434	31
-	+	653	2
-	+	543	0
-	+	618	0
-	+	647	0
-	+	647	0
-	+	748	0
-	+	748	0
-	+	752	34
-	+	1007	32
-	+	1022	18
-	+	1061	0
-	+	1131	43
-	+	1132	40
-	+	534	33
-	+	538	33
-	+	752	34
-	+	863	0
-	+	869	0
-	+	1108	19
-	+	1108	19
-	+	1109	2
-	+	1110	23
-	+	717	31
-	+	752	22
-	+	1131	26
-	+	1363	3
-	+	1131	16
-	+	1235	28
-	+	31	35
-	+	33	0
-	+	26	22
-	+	27	0
-	+	29	25
-	+	1266	0
-	+	61	0
-	+	961	2
-	+	1549	0
-	+	1554	0
-	+	966	7
-	+	962	11
-	+	969	7
-
-> ~/Downloads/git.omapzoom.org/4AJ.2.2/kernel/android-3.0/sound/soc/codecs/twl6040.c
-	"	915	12
-
-> ~/GitHub_Qiao-Huang_scripts/.git/COMMIT_EDITMSG
-	"	1	23
-	^	1	24
-	.	1	23
-	+	3	0
-	+	1	20
-	+	1	0
-	+	1	0
-	+	2	0
-	+	6	26
-	+	7	0
-	+	1	25
-	+	1	23
-
-> ~/MPA3-JB/4AJ.2.1/u-boot/include/configs/bluepoint.h
-	"	97	0
-	^	77	26
-	.	67	26
-	+	65	3
-	+	73	0
-	+	74	0
-	+	76	1
-	+	77	0
-	+	67	31
-	+	84	0
-	+	82	0
-	+	77	42
-	+	78	0
-	+	79	0
-	+	80	0
-	+	81	0
-	+	78	12
-	+	79	12
-	+	80	12
-	+	81	12
-	+	67	26
-
-> ~/MCD_MPA_ANDROID_1208/log-grep-ducati.txt
-	"	300	0
-
-> ~/MPA3-JB/4AJ.2.1/log-grep-ducati.txt
-	"	41	0
-
-> ~/MPA3-JB/4AJ.1.1/mydroid/device/ti/common-open/audio/audio_hw.c
-	"	1342	12
-	.	1342	0
-	+	1342	0
-
-> ~/MPA3-JB/4AJ.1.1/mydroid/build.sh
-	"	5	7
-	^	5	8
-	.	5	7
-	+	5	7
-
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/arch/arm/configs/bluepoint_defconfig
-	"	526	0
-	.	531	0
-	+	529	0
-	+	531	14
-	+	531	0
-	+	531	0
-	+	532	17
-	+	533	0
-	+	538	16
-	+	540	0
-	+	539	0
-	+	556	0
-	+	554	0
-	+	563	0
-	+	533	17
-	+	554	29
-	+	537	0
-	+	537	0
-	+	536	0
-	+	533	1
-	+	536	1
-	+	537	1
-	+	539	0
-	+	531	18
-	+	531	26
-	+	531	20
-	+	531	15
-	+	528	33
-	+	495	0
-	+	500	0
-	+	507	0
-	+	508	0
-	+	512	0
-	+	513	0
-	+	523	0
-	+	526	0
-	+	495	0
-	+	496	0
-	+	497	0
-	+	498	0
-	+	499	0
-	+	500	0
-	+	501	0
-	+	502	0
-	+	503	0
-	+	504	0
-	+	505	0
-	+	506	26
-	+	507	0
-	+	508	0
-	+	509	0
-	+	510	0
-	+	511	0
-	+	512	0
-	+	513	0
-	+	514	0
-	+	515	0
-	+	516	0
-	+	517	0
-	+	518	0
-	+	519	0
-	+	520	0
-	+	521	0
-	+	522	0
-	+	524	0
-	+	525	0
-	+	526	0
-	+	527	0
-	+	528	0
-	+	531	0
-	+	531	0
-	+	529	0
-	+	531	0
-
-> kernel/android-3.0/arch/arm/configs/bluepoint_defconfig
-	"	1	0
-
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/arch/arm/mach-omap2/remoteproc.c
-	"	246	4
-
-> ~/MPA3-JB/4AJ.2.1/u-boot/svn-commit.tmp
-	"	1	19
-	^	1	20
-	.	1	19
-	+	1	19
-
-> ~/MPA3-JB/4AJ.2.1/u-boot/include/svn-commit.tmp
-	"	1	0
-
-> ~/MPA3-JB/4AJ.2.1/u-boot/mpa3-u-boot-history.txt
-	"	43	3
-	^	40	4
-	.	41	0
-	+	69	0
-	+	93	0
-	+	70	18
-	+	72	15
-	+	74	14
-	+	77	51
-	+	78	0
-	+	79	51
-	+	86	33
-	+	90	0
-	+	92	0
-	+	45	0
-	+	69	0
-	+	46	18
-	+	53	29
-	+	55	36
-	+	62	33
-	+	21	0
-	+	22	18
-	+	45	0
-	+	38	45
-	+	39	5
-	+	37	0
-	+	24	15
-	+	29	49
-	+	32	54
-	+	41	0
-
-> ~/MPA3-JB/4AJ.2.1/u-boot/include/bsp_version.h
-	"	7	23
-	^	7	24
-	.	7	23
-	+	7	23
-
-> ~/MPA3-JB/4AJ.2.1/u-boot/board/bluepoint/bluepoint.c
-	"	279	1
+> ~/Desktop/list.txt
+	"	2706	1
 	^	1	0
-	.	233	0
-	+	75	69
-	+	75	25
-	+	75	25
-	+	75	25
-	+	75	25
-	+	75	25
-	+	75	25
-	+	75	27
-	+	75	28
-	+	75	30
-	+	75	27
-	+	75	91
-	+	75	29
-	+	75	28
-	+	75	30
-	+	75	27
-	+	75	31
-	+	75	36
-	+	57	19
-	+	58	61
-	+	59	20
-	+	60	65
-	+	75	1
-	+	75	0
-	+	75	0
-	+	75	0
-	+	75	0
-	+	75	0
-	+	75	0
-	+	75	0
-	+	75	0
-	+	75	0
-	+	75	0
-	+	75	1
-	+	75	1
-	+	75	1
-	+	75	1
-	+	75	1
-	+	75	1
-	+	75	1
-	+	75	1
-	+	75	1
-	+	75	1
-	+	75	25
-	+	75	25
-	+	75	24
-	+	75	26
-	+	75	27
-	+	75	27
-	+	75	26
-	+	75	22
-	+	75	24
-	+	75	24
-	+	75	24
-	+	75	24
-	+	75	24
-	+	75	24
-	+	75	55
-	+	75	28
-	+	75	76
-	+	75	76
-	+	75	108
-	+	249	0
-	+	249	7
-	+	58	60
-	+	60	65
-	+	191	24
-	+	75	53
-	+	75	0
-	+	75	0
-	+	75	0
-	+	75	76
-	+	75	53
-	+	75	84
-	+	75	76
-	+	75	109
-	+	75	53
-	+	75	118
-	+	75	53
-	+	75	112
-	+	75	78
-	+	75	76
-	+	75	55
-	+	75	124
-	+	75	55
-	+	249	0
-	+	233	42
-	+	83	39
-	+	193	51
-	+	202	45
-	+	202	41
-	+	1	0
-	+	75	0
-	+	75	0
-	+	83	0
-	+	193	0
-	+	192	0
-	+	191	0
-	+	202	0
-	+	233	0
 
-> ~/.bash_logout
-	"	14	66
-	^	14	67
-	.	14	25
-	+	9	68
-	+	9	68
-	+	10	74
-	+	11	32
-	+	9	67
-	+	9	0
-	+	7	2
-	+	7	2
-	+	9	3
-	+	10	3
-	+	11	3
-	+	10	27
-	+	12	0
-	+	13	0
-	+	12	22
-	+	13	24
-	+	14	25
+> ~/MC67_JB/4AJ.1.1/kernel/build_voltron.sh
+	"	6	23
+	^	6	24
+	.	6	23
+	+	6	23
 
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/arch/arm/mach-omap2/board-4430sdp.c
-	"	2887	14
-	^	2887	15
-	.	2879	21
-	+	725	0
-	+	2880	0
-	+	2879	21
+> ~/MC67_JB/4AJ.1.1/logs/voltron_userdebug/android_make.out
+	"	50422	0
 
-> ~/Downloads/git.denx.de/u-boot-ti/board/ti/sdp4430/sdp.c
+> ~/busybox-1.20.2/Makefile
+	"	57	0
+
+> ~/busybox-1.20.2/.config
+	"	698	18
+
+> /etc/viewvc/viewvc.conf
+	"	6	6
+
+> ~/MC67_JB/4AJ.1.1/logs/voltron_userdebug/u-boot_make.out
+	"	31	0
+
+> ~/MC67_JB/4AJ.1.1/bootloaders/u-boot/Makefile
+	"	99	0
+
+> ~/MC67_JB/4AJ.1.1/buildscripts/build_voltron
 	"	1	0
 
-> ~/MPA3-JB/4AJ.2.1/u-boot/cpu/omap4/syslib.c
-	"	107	0
+> ~/MC67_JB/4AJ.1.1/bootloaders/u-boot/build_voltron.sh
+	"	7	0
 
-> ~/MPA3-JB/4AJ.2.1/u-boot/drivers/fastboot.c
-	"	1569	22
+> ~/MC67_JB/4AJ.1.1/env_setup
+	"	9	0
+	^	9	0
+	.	115	0
+	+	14	42
+	+	15	44
+	+	77	36
+	+	106	57
+	+	115	0
+
+> ~/MPA3-JB/4AJ.1.1/env.sh
+	"	1	0
 
 > ~/MPA3-JB/4AJ.2.1/env_setup
-	"	100	1
-	^	100	2
+	"	13	37
+	^	13	38
+	.	13	38
+	+	97	0
+	+	98	1
+	+	97	0
+	+	98	0
+	+	97	0
+	+	98	0
+	+	97	1
+	+	98	1
+	+	16	0
+	+	17	37
+	+	71	0
+	+	70	0
+	+	71	35
+	+	11	0
+	+	13	0
+	+	10	0
+	+	12	0
+	+	11	37
+	+	13	38
+
+> ~/MPA3-JB/4AJ.2.1/android_fs/build_voltron.sh
+	"	21	0
+	^	42	0
+	.	40	7
+	+	40	0
+	+	38	0
+	+	39	0
+	+	40	7
+
+> ~/MPA3-JB/4AJ.2.1/kernel/mkvoltronimg.sh
+	"	6	0
+	^	6	0
+	.	3	20
+	+	3	20
+
+> ~/MPA3-JB/4AJ.2.1/bootloaders/u-boot/Makefile
+	"	186	20
+	^	186	21
+	.	180	20
+	+	177	0
+	+	180	0
+	+	176	0
+	+	179	0
+	+	177	28
+	+	180	26
+	+	177	17
+	+	180	20
+
+> ~/MPA3-JB/4AJ.2.1/bootloaders/x-loader/Makefile
+	"	111	0
+	^	111	1
+	.	106	10
+	+	103	0
+	+	106	0
+	+	102	0
+	+	105	0
+	+	103	20
+	+	106	20
+	+	103	10
+	+	106	10
+
+> ~/MPA3-JB/4AJ.2.1/build_voltron
+	"	1	1
+
+> ~/MPA3-JB/4AJ.2.1/buildscripts/build_voltron
+	"	1	0
+
+> ~/MPA3-JB/4AJ.2.1/u-boot/build_voltron.sh
+	"	1	0
+
+> ~/MPA3-JB/4AJ.2.1/kernel/build_voltron.sh
+	"	8	59
+	^	8	60
+	.	8	60
+	+	8	0
+	+	7	1
+	+	8	60
+
+> ~/delta_411_v5/android_fs/device/motosln/MC40/full_MC40.mk
+	"	1	0
+
+> ~/delta_411_v5/android_fs/device/motosln/MC40/device.mk
+	"	216	0
+
+> ~/delta_411_v5/android_fs/device/motosln/MC40/Android.mk
+	"	1	0
+
+> ~/.screenrc
+	"	1	31
+	^	1	32
+	.	1	31
+	+	1	31
+
+> ~/Demo-Case-2013-Feb/4AJ.2.1/mydroid/device/motosln/MC40/MC40.mk
+	"	111	4
+	^	247	13
+	.	247	12
+	+	248	0
+	+	247	12
+
+> ~/Demo-Case-2013-Feb/4AJ.2.1/mydroid/external/hello/Android.mk
+	"	1	0
+	^	7	13
+	.	7	43
+	+	3	0
+	+	4	33
+	+	5	22
+	+	6	20
+	+	7	43
+
+> ~/Demo-Case-2013-Feb/4AJ.2.1/mydroid/external/tinyalsa/Android.mk
+	"	1	0
+
+> ~/Demo-Case-2013-Feb/helloworld/Makefile
+	"	24	0
+	^	24	0
+	.	24	0
+	+	1	0
+	+	3	0
+	+	6	0
+	+	6	0
+	+	4	0
+	+	5	0
+	+	4	18
+	+	6	19
+	+	6	48
+	+	6	48
+	+	6	0
+	+	5	0
+	+	8	0
+	+	8	0
+	+	8	22
+	+	8	9
+	+	9	0
+	+	10	0
+	+	10	21
+	+	13	15
+	+	13	59
+	+	13	59
+	+	13	69
+	+	16	0
+	+	13	0
+	+	11	0
+	+	10	0
+	+	20	0
+	+	21	25
+	+	25	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	8	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	13	0
+	+	11	0
+	+	14	15
+	+	15	1
+	+	14	23
+	+	19	0
+	+	17	22
+	+	17	6
+	+	19	0
+	+	17	7
+	+	17	7
+	+	17	7
+	+	18	2
+	+	18	2
+	+	18	0
+	+	15	0
+	+	21	1
+	+	22	1
+	+	8	0
+	+	6	68
+	+	9	0
+	+	7	16
+	+	6	23
+	+	7	0
+	+	9	7
+	+	10	10
+	+	9	10
+	+	10	13
+	+	12	6
+	+	2	0
+	+	1	9
+	+	24	0
+
+> ~/Demo-Case-2013-Feb/helloworld/helloworld.c
+	"	10	0
+	^	10	0
+	.	9	0
+	+	1	19
+	+	5	1
+	+	6	27
+	+	7	10
+	+	1	15
+	+	9	0
+
+> ~/Demo-Case-2013-Feb/4AJ.2.1/mydroid/build_MC40.sh
+	"	21	43
+	^	21	44
+	.	21	7
+	+	18	0
+	+	21	7
+
+> ~/Demo-Case-2013-Feb/4AJ.2.1/mydroid/external/omapconf/Android.mk
+	"	306	2
+	^	271	0
+	.	3	0
+	+	1	27
+	+	3	0
+
+> ~/Demo-Case-2013-Feb/4AJ.2.1/mydroid/external/libyuv/Android.mk
+	"	39	0
+
+> ~/Demo-Case-2013-Feb/omapconf/Makefile
+	"	287	0
+
+> ~/omapconf/Makefile
+	"	271	0
+	^	333	21
+	.	69	27
+	+	69	27
+
+> ~/omapconf/README.md
+	"	87	1
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/device/motosln/MC40/MC40.mk
+	"	262	12
+	^	262	13
+	.	247	12
+	+	243	0
+	+	252	0
+	+	251	15
+	+	248	0
+	+	247	12
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/hello/hello.c
+	"	4	10
+	^	4	11
+	.	7	10
+	+	1	18
+	+	2	19
+	+	4	14
+	+	6	27
+	+	7	10
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/hello/Android.mk
+	"	5	24
+	^	5	25
+	.	7	43
+	+	3	0
+	+	5	22
+	+	4	32
+	+	6	20
+	+	7	43
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/kernel/android-3.0/build_voltron.sh
+	"	7	16
+	^	7	17
+	.	7	16
+	+	3	1
+	+	7	16
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/build_MC40.sh
+	"	21	14
+	^	21	15
+	.	21	7
+	+	18	1
+	+	21	7
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/u-boot/build_voltron.sh
+	"	2	1
+	^	2	2
+	.	2	1
+	+	2	1
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/x-loader/build_voltron.sh
+	"	3	1
+	^	3	2
+	.	3	1
+	+	3	1
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/env_setup
+	"	106	1
+	^	106	2
 	.	94	1
 	+	93	1
 	+	94	1
-	+	95	1
+
+> ~/Demo-Case-2013-Feb/4AJ.2.1/env_setup
+	"	99	1
+	^	99	2
+	.	94	1
+	+	93	1
 	+	94	1
 
-> ~/GitHub_Qiao-Huang_files/.git/COMMIT_EDITMSG
-	"	1	30
-	^	1	31
-	.	1	30
-	+	9	73
-	+	1	0
-	+	3	0
-	+	4	0
-	+	5	0
-	+	6	0
-	+	1	0
-	+	3	0
-	+	4	0
-	+	5	0
-	+	6	0
-	+	7	0
-	+	8	0
-	+	9	0
-	+	1	30
+> ~/Demo-Case-2013-Feb/4AJ.2.1/x-loader/build_voltron.sh
+	"	3	1
+	^	3	2
+	.	3	1
+	+	3	1
 
-> ~/.bashrc
-	"	105	50
-	^	105	51
-	.	104	51
-	+	102	33
-	+	106	0
-	+	103	56
-	+	103	14
-	+	96	0
-	+	103	56
-	+	104	52
-	+	105	12
-	+	104	52
-	+	105	42
-	+	104	52
-	+	105	24
-	+	104	51
+> ~/Demo-Case-2013-Feb/4AJ.2.1/u-boot/build_voltron.sh
+	"	3	0
+	^	3	0
+	.	2	1
+	+	2	1
 
-> ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/bluepoint/device.mk
-	"	215	1
-	^	215	2
-	.	215	1
-	+	216	0
-	+	215	15
-	+	214	1
-	+	215	1
-
-> ~/MPA3-JB/4AJ.2.1/mydroid/external/omapconf/Android.mk
-	"	1	8
-	^	1	0
-	.	119	0
-	+	123	19
-	+	123	16
-	+	123	16
-	+	123	19
-	+	123	19
-	+	123	19
-	+	123	15
-	+	123	15
-	+	123	20
-	+	123	18
-	+	123	24
-	+	123	24
-	+	123	22
-	+	123	22
-	+	123	19
-	+	123	19
-	+	123	18
-	+	123	28
-	+	123	28
-	+	123	16
-	+	123	16
-	+	123	16
-	+	123	18
-	+	123	18
-	+	123	28
-	+	123	18
-	+	123	18
-	+	123	26
-	+	123	25
-	+	123	25
-	+	123	24
-	+	123	17
-	+	123	17
-	+	123	17
-	+	123	19
-	+	123	17
-	+	123	19
-	+	123	19
-	+	123	9
-	+	4	19
-	+	62	0
-	+	61	19
-	+	123	0
-	+	123	0
-	+	94	22
-	+	123	0
-	+	123	0
-	+	123	0
-	+	123	0
-	+	123	0
-	+	123	0
-	+	123	0
-	+	123	0
-	+	123	0
-	+	123	0
-	+	123	0
-	+	123	0
-	+	123	0
-	+	123	0
-	+	123	1
-	+	123	4
-	+	123	0
-	+	123	0
-	+	123	0
-	+	95	16
-	+	96	17
-	+	97	19
-	+	98	19
-	+	100	17
-	+	101	16
-	+	102	19
-	+	103	21
-	+	104	18
-	+	95	18
-	+	96	18
-	+	97	20
-	+	98	20
-	+	99	23
-	+	100	18
-	+	101	18
-	+	102	20
-	+	103	22
-	+	123	0
-	+	123	0
-	+	109	25
-	+	62	0
-	+	95	0
-	+	106	28
-	+	62	0
-	+	105	18
-	+	108	28
-	+	109	29
-	+	4	0
-	+	111	0
-	+	117	0
-	+	113	25
-	+	114	23
-	+	115	54
-	+	117	0
-	+	119	0
-
-> ~/.bash_profile
-	"	5	1
-	^	5	2
-	.	6	0
-	+	5	33
-	+	2	0
-	+	5	4
-	+	4	1
-	+	5	0
-	+	6	0
-
-> /etc/bash_completion
-	"	1669	0
-
-> /etc/bash_completion.d/git
-	"	51	0
-
-> /etc/bash.bashrc
-	"	52	9
-	^	22	2
-	.	34	0
-	+	32	0
-	+	33	0
-	+	34	0
-
-> /etc/profile.d/speechd-user-port.sh
-	"	1	0
-
-> /etc/profile
-	"	1	0
-
-> ~/GitHub_Qiao-Huang_scripts/.git/config
-	"	11	21
-	^	11	22
-	.	8	22
-	+	8	22
-
-> ~/.gitconfig
-	"	5	33
-	^	5	34
-	.	6	0
-	+	6	0
-
-> ~/GitHub_Qiao-Huang_scripts/Q-grep.sh
-	"	8	54
-	^	8	55
-	.	8	54
-	+	8	84
-	+	8	74
-	+	2	0
-	+	3	75
-	+	3	75
-	+	3	74
-	+	5	10
-	+	8	17
-	+	5	33
-	+	6	29
-	+	8	44
-	+	6	9
-	+	8	54
-
-> ~/GitHub_Qiao-Huang_scripts/msgbox.sh
-	"	10	6
-	^	10	7
-	.	7	6
-	+	6	22
-	+	8	29
-	+	11	17
-	+	6	15
-	+	11	27
-	+	12	11
-	+	8	18
-	+	14	52
-	+	15	2
-	+	9	22
-	+	2	21
-	+	3	0
-	+	10	17
-	+	7	6
-
-> ~/GitHub_Qiao-Huang_scripts/hello.sh
-	"	4	0
-	^	4	0
-	.	3	15
-	+	4	0
-	+	3	15
-
-> ~/GitHub_Qiao-Huang_scripts/copy_uImage_to_www.sh
-	"	1	0
-
-> ~/MPA3-JB/4AJ.2.1/build_test_log_2012-12-27.txt
-	"	53595	0
-
-> ~/scripts/.git/COMMIT_EDITMSG
-	"	4	0
-	^	4	0
-	.	1	18
-	+	3	27
-	+	1	0
-	+	2	0
-	+	3	0
-	+	1	0
-	+	2	0
-	+	3	0
-	+	1	18
-
-> ~/MPA3-JB/4AJ.2.1/build_test_log_2012-12-27_showcommands.txt
-	"	116357	0
-
-> ~/MPA3-JB/4AJ.2.1/build_test_log_2012-12-26.txt
-	"	53327	33
-
-> ~/my_scripts/Q-menu
-	"	67	0
-	^	67	0
-	.	7	0
-	+	49	15
-	+	49	17
-	+	49	0
-	+	24	1
-	+	25	1
-	+	26	1
-	+	29	1
-	+	49	0
-	+	33	16
-	+	31	20
-	+	46	9
-	+	31	17
-	+	32	8
-	+	33	13
-	+	39	26
-	+	46	6
-	+	38	7
-	+	39	0
-	+	42	6
-	+	34	8
-	+	38	0
-	+	43	28
-	+	39	22
-	+	43	29
-	+	46	5
-	+	47	0
-	+	45	7
-	+	44	11
-	+	37	7
-	+	11	17
-	+	22	0
-	+	12	29
-	+	13	131
-	+	21	50
-	+	14	2
-	+	13	100
-	+	13	51
-	+	15	75
-	+	13	56
-	+	21	48
-	+	22	0
-	+	35	5
-	+	27	17
-	+	13	109
-	+	2	8
-	+	15	36
-	+	14	0
-	+	17	36
-	+	16	0
-	+	2	0
-	+	3	27
-	+	21	19
-	+	17	36
-	+	15	37
-	+	13	37
-	+	21	7
-	+	5	28
-	+	20	0
-	+	19	8
-	+	7	27
-	+	7	11
-	+	7	1
-	+	7	0
-	+	7	0
-	+	7	1
-	+	7	0
-
-> /etc/bash_completion.d/bzip2
-	"	1	0
-
-> /etc/bash_completion.d/tar
-	"	1	0
-
-> ~/.vimrc
-	"	8	0
-	^	8	0
+> ~/Demo-Case-2013-Feb/4AJ.2.1/kernel/android-3.0/build_voltron.sh
+	"	7	0
+	^	7	1
 	.	3	0
-	+	15	2
-	+	13	0
-	+	8	0
-	+	16	0
-	+	17	15
-	+	4	7
-	+	11	83
-	+	11	93
-	+	11	83
-	+	11	13
-	+	11	137
-	+	12	0
-	+	13	0
-	+	12	0
 	+	3	0
 
-> ~/bin/Q-menu
-	"	51	6
-	^	51	7
-	.	50	4
-	+	17	2
-	+	20	19
-	+	21	29
-	+	21	30
-	+	21	30
-	+	22	78
-	+	23	10
-	+	30	0
+> ~/Demo-Case-2013-Feb/4AJ.2.1/build_voltron
+	"	10	0
+
+> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/build_voltron.sh
+	"	3	0
+	^	3	2
+	.	3	1
+	+	2	1
+	+	5	13
+	+	3	23
+	+	2	18
+	+	4	0
+	+	3	1
+
+> ~/MPA3-JB/4AJ.2.1/mydroid/build_MC40.sh
+	"	21	0
+	^	21	1
+	.	18	0
+	+	18	0
+
+> ~/MPA3-JB/4AJ.2.1/mydroid/device/motosln/MC40/MC40.mk
+	"	248	0
+	^	248	0
+	.	248	0
+	+	247	65
+	+	248	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/build/envsetup.sh
+	"	681	0
+	^	681	0
+	.	676	43
+	+	676	43
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/mmm.log
+	"	32099	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/build/core/definitions.mk
+	"	1	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/omapconf/arch/arm/mach-omap/omap5/lib54xx.c
+	"	452	38
+	^	382	42
+	.	371	65
+	+	365	1
+	+	369	0
+	+	365	5
+	+	370	0
+	+	372	53
+	+	371	65
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/omapconf/common/lib.c
+	"	1	0
+	^	131	9
+	.	102	44
+	+	98	1
+	+	104	0
+	+	101	1
+	+	98	5
+	+	101	6
+	+	103	51
+	+	102	44
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/omapconf/Android.mk
+	"	255	32
+	^	255	33
+	.	255	32
+	+	248	53
+	+	250	0
+	+	248	77
+	+	249	19
+	+	265	0
+	+	252	18
+	+	251	38
+	+	252	20
+	+	253	35
+	+	254	36
+	+	256	31
+	+	257	36
+	+	258	35
+	+	259	38
+	+	260	30
+	+	261	30
+	+	263	21
+	+	264	19
+	+	263	15
+	+	264	28
+	+	262	39
+	+	204	18
+	+	262	48
+	+	265	0
+	+	266	24
+	+	2	0
+	+	2	0
+	+	266	19
+	+	19	34
+	+	21	27
+	+	22	30
+	+	23	28
 	+	24	0
-	+	23	6
-	+	26	52
-	+	27	52
-	+	29	54
-	+	37	7
-	+	48	6
-	+	50	4
+	+	20	34
+	+	21	34
+	+	22	34
+	+	23	34
+	+	24	34
+	+	25	34
+	+	26	34
+	+	27	34
+	+	28	34
+	+	29	34
+	+	30	34
+	+	31	34
+	+	32	34
+	+	33	34
+	+	34	34
+	+	35	34
+	+	39	15
+	+	261	26
+	+	39	27
+	+	126	0
+	+	127	0
+	+	128	0
+	+	129	0
+	+	130	0
+	+	131	0
+	+	132	0
+	+	133	0
+	+	134	0
+	+	135	0
+	+	136	0
+	+	137	0
+	+	138	0
+	+	139	0
+	+	140	0
+	+	141	0
+	+	142	0
+	+	143	0
+	+	144	0
+	+	145	0
+	+	147	0
+	+	146	8
+	+	148	0
+	+	149	0
+	+	150	0
+	+	151	0
+	+	152	0
+	+	153	0
+	+	154	0
+	+	155	0
+	+	156	0
+	+	157	0
+	+	158	0
+	+	159	0
+	+	160	0
+	+	161	0
+	+	162	0
+	+	163	0
+	+	164	0
+	+	165	0
+	+	166	0
+	+	167	0
+	+	168	0
+	+	169	0
+	+	170	0
+	+	172	0
+	+	124	0
+	+	255	32
 
-> ~/.viminfo
-	"	1099	1
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/omapconf/arch/arm/mach-omap/common/statcoll/sci_swcapture.c
+	"	1128	0
+	^	890	2
+	.	867	9
+	+	107	1
+	+	108	1
+	+	112	1
+	+	113	1
+	+	81	34
+	+	82	34
+	+	87	4
+	+	80	46
+	+	81	37
+	+	82	37
+	+	87	8
+	+	88	0
+	+	99	0
+	+	99	0
+	+	99	0
+	+	99	0
+	+	95	0
+	+	96	0
+	+	97	0
+	+	103	0
+	+	101	0
+	+	112	0
+	+	109	0
+	+	114	0
+	+	87	5
+	+	88	5
+	+	95	5
+	+	96	5
+	+	97	5
+	+	101	5
+	+	109	5
+	+	114	5
+	+	87	21
+	+	88	30
+	+	95	28
+	+	87	22
+	+	88	31
+	+	95	29
+	+	96	29
+	+	97	19
+	+	101	21
+	+	109	24
+	+	110	31
+	+	114	31
+	+	87	18
+	+	88	7
+	+	95	32
+	+	96	32
+	+	97	12
+	+	98	35
+	+	97	35
+	+	96	65
+	+	95	65
+	+	88	71
+	+	101	16
+	+	109	22
+	+	110	36
+	+	114	36
+	+	117	0
+	+	118	0
+	+	493	0
+	+	492	43
+	+	498	0
+	+	497	51
+	+	505	0
+	+	504	43
+	+	510	0
+	+	509	9
+	+	519	43
+	+	558	9
+	+	628	0
+	+	627	43
+	+	629	0
+	+	630	79
+	+	631	0
+	+	632	37
+	+	633	0
+	+	634	0
+	+	635	0
+	+	636	37
+	+	637	42
+	+	638	0
+	+	639	37
+	+	640	35
+	+	641	40
+	+	642	51
+	+	643	36
+	+	644	0
+	+	645	0
+	+	646	77
+	+	647	0
+	+	648	77
+	+	649	42
+	+	650	0
+	+	651	37
+	+	652	35
+	+	654	0
+	+	653	9
+	+	854	43
+	+	867	9
 
-> ~/.profile
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/omapconf/arch/arm/mach-omap/common/statcoll/sci_common.h
+	"	55	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/kernel/android-3.0/arch/arm/configs/voltron_defconfig
+	"	448	15
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/kernel/android-3.0/arch/arm/mach-omap2/emif.c
+	"	55	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/omapconf/arch/arm/mach-omap/common/statcoll/sci_dev.h
+	"	110	4
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/omapconf/arch/arm/mach-omap/common/statcoll/sci.h
+	"	59	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/omapconf/arch/arm/mach-omap/common/statcoll/sci.c
+	"	539	54
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/omapconf/arch/arm/mach-omap/common/statcoll/cToolsHelper.c
+	"	89	48
+	^	89	49
+	.	89	49
+	+	89	49
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/omapconf/tree.log
+	"	249	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/tree.log
 	"	1	0
 
-> ~/MCD_MPA_ANDROID_1208/build_bluepoint
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/srec/seti/sltsEngine/Android.mk
 	"	1	0
 
-> ~/Downloads/MPA3-JB/4AJ.2.1/mydroid/build/envsetup.sh
-	"	548	0
-	^	388	7
-	.	388	0
-	+	388	0
-
-> ~/my_scripts/Q-menu.sh
-	"	11	7
-	^	11	8
-	.	8	7
-	+	1	19
-	+	4	9
-	+	4	43
-	+	16	32
-	+	17	17
-	+	20	1
-	+	20	0
-	+	20	13
-	+	20	7
-	+	17	6
-	+	1	11
-	+	20	0
-	+	20	10
-	+	20	12
-	+	20	0
-	+	20	17
-	+	20	0
-	+	20	1
-	+	20	1
-	+	20	1
-	+	20	3
-	+	20	1
-	+	20	5
-	+	7	0
-	+	14	0
-	+	20	6
-	+	8	7
-
-> ~/Downloads/MPA3-JB/4AJ.2.1/env_setup
-	"	50	0
-
-> ~/MPA3-JB/4AJ.2.1/u-boot/common/svn-commit.tmp
-	"	1	0
-
-> ~/MPA3-JB/4AJ.2.1/u-boot/board/bluepoint/mmc.c
-	"	305	0
-	^	305	0
-	.	274	0
-	+	265	23
-	+	266	8
-	+	265	23
-	+	266	26
-	+	267	11
-	+	265	4
-	+	266	13
-	+	269	10
-	+	271	0
-	+	269	10
-	+	269	17
-	+	269	17
-	+	269	0
-	+	271	0
-	+	269	22
-	+	269	14
-	+	270	0
-	+	269	22
-	+	269	23
-	+	269	23
-	+	270	15
-	+	269	17
-	+	274	0
-
-> board/bluepoint/mmc.c
-	"	1	0
-
-> ~/MPA3-JB/4AJ.2.1/u-boot/common/cmd_fastboot.c
-	"	1410	17
-	^	1410	18
-	.	1410	17
-	+	1409	26
-	+	1410	17
-
-> ~/MPA3-JB/4AJ.2.1/u-boot/board/bluepoint/svn-commit.tmp
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/tinyalsa/Android.mk
 	"	2	0
 
-> /etc/apt/apt.conf.d/proxy
-	"	1	0
-	^	1	0
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/expat/Android.mk
+	"	87	0
 
-> /etc/apt/apt.conf
-	"	1	0
-	^	1	2
-	.	1	1
-	+	1	1
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/omapconf/Makefile
+	"	43	0
 
-> /etc/resolv.conf
-	"	3	18
-	^	3	19
-	.	3	10
-	+	3	7
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/oprofile/common.mk
+	"	53	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/definitions.txt
+	"	10	9
+	^	2	0
+	.	76	0
+	+	1	0
 	+	2	0
-	+	1	10
-	+	2	10
-	+	3	10
+	+	3	0
+	+	4	0
+	+	7	0
+	+	8	0
+	+	76	0
 
-> /etc/network/interfaces
-	"	1	0
-	^	7	19
-	.	8	39
-	+	8	39
-
-> ~/Downloads/OMAP4-TDD/arch/arm/cpu/armv7/omap-common/emif-common.c
-	"	800	1
-
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/.config
-	"	2180	7
-
-> ~/Downloads/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/Kconfig
-	"	107	0
-	^	107	0
-	.	126	1
-	+	62	1
-	+	126	1
-
-> ~/Downloads/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/Kconfig
-	"	238	0
-
-> ~/Downloads/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/Kconfig
-	"	9	0
-
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/arm/Kconfig
-	"	22	0
-
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/omap/Kconfig
-	"	1	0
-
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/codecs/Kconfig
-	"	392	1
-
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/soc/Kconfig
-	"	51	30
-
-> ~/MPA3-JB/4AJ.2.1/kernel/android-3.0/sound/Kconfig
-	"	137	22
-
-> ~/MPA3-JB/4AJ.2.1/q-build_bluepoint
-	"	35	0
-	^	35	0
-	.	5	5
-	+	5	5
-
-> ~/.screenrc
-	"	5	19
-	^	5	20
-	.	2	17
-	+	1	15
-	+	45	19
-	+	2	17
-
-> /etc/apt/apt.conf.d/99synaptic
-	"	1	0
-
-> /etc/apt/apt.conf.d/01ubuntu
-	"	1	0
-
-> ~/MPA3-Android-4AJ.1.1/mydroid/device/ti/bluepoint/device.mk
-	"	224	27
-	^	224	28
-	.	224	27
-	+	222	0
-	+	223	9
-	+	224	27
-	+	224	27
-
-> ~/MPA3-Android-4AJ.1.1/mydroid/external/omapconf/common/lib.c
-	"	100	42
-	^	103	40
-	.	103	40
-	+	100	42
-	+	98	1
-	+	101	2
-	+	102	37
-	+	103	40
-
-> ~/MPA3-Android-4AJ.1.1/mydroid/external/omapconf/omap5/lib54xx.c
-	"	614	35
-	^	614	36
-	.	614	35
-	+	614	1
-	+	618	1
-	+	614	35
-
-> ~/MPA3-Android-4AJ.1.1/mydroid/external/omapconf/statcoll/sci_swcapture.c
-	"	608	45
-	^	847	6
-	.	847	5
-	+	73	35
-	+	100	24
-	+	131	6
-	+	101	0
-	+	74	0
-	+	75	0
-	+	77	46
-	+	78	15
-	+	79	34
-	+	81	40
-	+	82	64
-	+	83	0
-	+	85	46
-	+	86	15
-	+	87	28
-	+	88	0
-	+	89	20
-	+	90	0
+> ~/MPA3-JB/export/4AJ.2.1-20130206/definitions.mk
+	"	185	0
+	.	178	0
+	+	1	0
+	+	4	0
+	+	8	58
+	+	11	0
+	+	13	0
+	+	16	0
+	+	22	0
+	+	27	0
+	+	25	63
+	+	6	0
+	+	12	0
+	+	18	0
+	+	23	0
+	+	30	0
+	+	34	0
+	+	35	0
+	+	40	0
+	+	42	0
+	+	48	0
+	+	49	0
+	+	54	0
+	+	55	0
+	+	61	0
+	+	62	0
+	+	67	0
+	+	68	0
+	+	72	0
+	+	73	0
+	+	77	0
+	+	78	0
+	+	84	0
+	+	85	0
 	+	91	0
-	+	94	0
-	+	91	0
-	+	93	43
-	+	95	64
-	+	97	64
-	+	73	33
-	+	85	60
-	+	86	60
+	+	70	62
+	+	70	123
+	+	70	123
+	+	92	0
+	+	95	3
 	+	98	0
-	+	472	43
-	+	477	5
-	+	484	42
-	+	489	5
-	+	496	0
-	+	498	42
-	+	537	5
-	+	585	0
-	+	639	5
-	+	834	0
-	+	847	5
-
-> ~/MPA3-Android-4AJ.1.1/mydroid/external/omapconf/statcoll/sci_dev.h
-	"	55	4
-	^	199	0
-	.	126	0
-	+	46	51
-	+	126	13
-	+	127	0
-	+	46	44
-	+	126	0
-
-> ~/MPA3-Android-4AJ.1.1/mydroid/external/omapconf/statcoll/cToolsHelper.c
-	"	97	7
-	^	97	8
-	.	93	17
-	+	48	25
-	+	50	0
-	+	48	25
-	+	89	12
-	+	91	6
-	+	92	51
-	+	93	17
-
-> ~/MPA3-Android-4AJ.1.1/mydroid/external/omapconf/Android.mk
-	"	176	10
-	^	186	0
-	.	160	15
-	+	175	41
-	+	176	48
-	+	177	49
-	+	178	45
-	+	186	0
-	+	185	25
-	+	93	21
-	+	110	29
-	+	107	26
-	+	50	0
-	+	107	0
-	+	94	0
-	+	112	0
-	+	130	0
-	+	124	52
-	+	126	29
-	+	131	0
-	+	154	0
-	+	143	102
-	+	143	51
-	+	146	0
-	+	144	16
-	+	146	21
-	+	147	22
-	+	150	27
-	+	181	82
-	+	45	29
-	+	47	0
-	+	91	0
-	+	110	0
-	+	129	0
-	+	153	0
-	+	185	0
-	+	168	12
-	+	15	61
-	+	60	60
-	+	104	59
-	+	123	62
-	+	142	60
-	+	156	0
-	+	166	41
-	+	15	81
-	+	60	60
-	+	104	59
-	+	123	63
-	+	166	55
-	+	16	0
-	+	15	1
-	+	2	10
-	+	1	10
-	+	2	51
-	+	17	60
-	+	16	1
-	+	17	62
-	+	2	52
-	+	17	64
-	+	18	1
-	+	16	0
-	+	17	0
-	+	2	111
-	+	60	0
-	+	60	0
-	+	107	0
-	+	104	0
-	+	104	0
-	+	123	0
-	+	142	0
-	+	142	0
-	+	166	0
-	+	166	0
-	+	7	15
-	+	53	0
-	+	96	0
-	+	115	0
-	+	134	0
-	+	158	0
-	+	6	17
-	+	51	17
-	+	95	17
-	+	114	17
-	+	133	17
-	+	157	17
-	+	6	7
-	+	51	7
-	+	95	7
-	+	114	7
-	+	133	7
-	+	157	7
-	+	43	44
-	+	87	0
+	+	99	0
+	+	105	0
 	+	106	0
+	+	111	0
+	+	112	0
+	+	117	0
+	+	118	0
+	+	126	0
+	+	151	0
+	+	150	0
+	+	141	0
+	+	142	0
+	+	140	0
+	+	135	0
+	+	136	0
+	+	155	0
+	+	156	0
+	+	161	0
+	+	162	0
+	+	163	0
+	+	168	0
+	+	169	0
+	+	171	113
+	+	171	168
+	+	171	223
+	+	171	223
+	+	173	0
+	+	178	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/build_voltron
+	"	26	0
+
+> ~/omapconf/Makefile_CP
+	"	57	1
+	^	154	0
+	.	157	0
+	+	1	0
+	+	2	0
+	+	3	0
+	+	16	0
+	+	19	0
+	+	26	0
+	+	21	0
+	+	43	0
+	+	102	0
+	+	104	0
+	+	105	0
+	+	123	0
+	+	126	0
 	+	125	0
+	+	126	0
+	+	128	0
+	+	130	0
+	+	132	0
+	+	133	0
+	+	134	0
+	+	139	0
+	+	141	0
+	+	143	0
+	+	145	0
+	+	146	0
+	+	151	0
+	+	154	0
+	+	153	0
+	+	156	0
+	+	157	0
+	+	157	0
+	+	160	0
+	+	146	0
+	+	157	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/opencv/Android.mk
+	"	1	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/stlport/README.google
+	"	1	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/stlport/README
+	"	57	1
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/stlport/Android.mk
+	"	79	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/stlport/Makefile
+	"	1	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/clang/README.android
+	"	1	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/clang/README.txt
+	"	1	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/external/clang/INSTALL.txt
+	"	1	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/system/core/adb/Android.mk
+	"	120	0
+
+> ~/MPA3-JB/export/4AJ.2.1-20130206/mydroid/development/ndk/samples/module-exports/jni/Android.mk
+	"	1	0
+
+> ~/MPA3-JB/4AJ.2.1/mydroid/build/core/main.mk
+	"	332	29
+	^	332	30
+	.	332	30
+	+	1	4
+	+	1	61
+	+	1	0
+	+	1	57
+	+	1	56
+	+	1	96
+	+	1	19
+	+	1	70
+	+	1	10
+	+	1	63
+	+	1	7
+	+	1	60
+	+	1	74
+	+	1	82
+	+	1	74
+	+	1	84
+	+	1	0
+	+	2	37
+	+	1	1
+	+	2	1
+	+	332	57
+	+	333	0
+	+	332	30
+
+> ~/MPA3-JB/4AJ.2.1/mydroid/ndk/GNUmakefile
+	"	1	0
+
+> ~/MPA3-JB/4AJ.2.1/mydroid/ndk/sources/android/cpufeatures/Android.mk
+	"	1	0
+
+> ~/MPA3-JB/4AJ.2.1/mydroid/development/ndk/sources/android/native_app_glue/android_native_app_glue.c
+	"	442	0
+
+> ~/main.mk
+	"	28	15
+	^	87	16
+	.	123	16
+	+	1	0
+	+	3	0
+	+	16	0
+	+	20	0
+	+	27	0
+	+	28	0
+	+	32	0
+	+	33	0
+	+	95	0
+	+	100	0
+	+	85	0
+	+	95	0
+	+	104	0
+	+	115	0
+	+	130	0
+	+	129	0
+	+	130	0
+	+	132	0
+	+	145	0
+	+	147	0
+	+	148	0
 	+	149	0
-	+	180	0
-	+	9	15
-	+	54	15
-	+	98	15
-	+	117	15
-	+	136	15
-	+	160	15
+	+	151	0
+	+	168	0
+	+	169	0
+	+	182	0
+	+	183	0
+	+	240	0
+	+	254	5
+	+	280	0
+	+	280	0
+	+	290	0
+	+	424	0
+	+	424	0
+	+	423	0
+	+	428	0
+	+	128	0
+	+	123	16
 
-> ~/Downloads/OMAP4-TDD/common/usi_omap4/gpioTest.c
-	"	328	0
+> ~/MPA3-JB/4AJ.2.1/mydroid/build/target/product/core.mk
+	"	1	0
 
-> ~/MPA3-Android-4AJ.1.1/mydroid/external/omapconf/statcoll/sci_common.h
-	"	779	15
-	^	779	16
-	.	774	14
-	+	418	54
-	+	774	14
+> ~/MPA3-JB/4AJ.2.1/mydroid/build/core/combo/arch/arm/armv7-a.mk
+	"	1	0
 
-> ~/MPA3-JB/4AJ.2.1/mydroid/svn-commit.tmp
-	"	1	18
-	^	1	19
-	.	1	18
-	+	1	18
+> ~/MPA3-JB/4AJ.2.1/mydroid/build/core/config.mk
+	"	416	0
 
-> ~/MPA3-JB/4AJ.2.1/mydroid/device/ti/common-open/svn-commit.tmp
+> ~/MPA3-JB/4AJ.2.1/mydroid/build/core/definitions.mk
+	"	1783	0
+
+> ~/MPA3-JB/4AJ.2.1/mydroid/build/core/device.mk
+	"	1	0
+
+> ~/MPA3-JB/4AJ.2.1/mydroid/build/core/base_rules.mk
+	"	628	0
+
+> ~/MPA3-JB/4AJ.2.1/mydroid/build/core/Makefile
+	"	52	0
+
+> ~/MPA3-JB/4AJ.2.1/mydroid/build/core/root.mk
 	"	1	0
