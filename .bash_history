@@ -1,113 +1,3 @@
-exit
-sudo apt-get update
-sudo apt-get upgrade 
-ls
-cd MPA3-JB/4AJ.2.1/
-ls
-rm log-grep-ducati.txt 
-ls
-cd mydroid/
-ls
-grep -rn "ignoring old command" ./build/
-vim build/tools/warn.py 
-ls build/tools/
-vim build/tools/buildinfo.sh 
-grep -rn "info" ./build/tools/
-grep -rn "No private recovery resources" ./build/
-sudo apt-get install remake
-man remake
-cd ..
-less logs/voltron_userdebug/android_make.2013-01-28.out 
-cd ..
-ls
-cd 4AJ.2.1-copy-1/
-ls
-vim build_voltron 
-vim env_setup 
-vim x-loader/build_voltron.sh 
-vim u-boot/build_voltron.sh 
-vim kernel/android-3.0/build_voltron.sh 
-top
-vim u-boot/build_voltron.sh 
-vim kernel/android-3.0/build_voltron.sh 
-vim mydroid/build_voltron.sh 
-top
-man remake
-top
-grep -rn "awk" ./mydroid/build/
-grep -rn "grep" ./mydroid/build/
-exit
-cd MPA3-JB/4AJ.2.1/mydroid/
-ls
-clear
-ls
-ls -l
-ls -a
-cat Makefile 
-man man
-man linux
-man top
-man w
-man tree
-man make
-man which
-info which
-less build_voltron.sh 
-man tee
-echo VAR
-VAR=ABCDEFG
-echo VAR
-echo $VAR
-echo $env
-env
-man awk
-info awk
-grep -rn "awk" ./build/
-echo $@
-vim build/envsetup.sh 
-exit
-top
-ls
-cd ../
-cd export_2/
-svn export --username QianHao --password 1021Huang svn://10.0.3.205/MPA3_JB/4AJ.2.1
-cd 4AJ.2.1/
-vim mydroid/build/core/main.mk 
-cd mydroid/
-ls
-cp build_MC40.sh build_voltron.sh
-vim build_voltron.sh 
-./build_voltron.sh userdebug
-last
-man ls
-ls
-ls -C
-ls -Cal
-exit
-screen -r
-exit
-cd MPA3-JB/4AJ.2.1/
-cd logs
-ls
-cd voltron_user
-ls
-less android_make_-d.out 
-less android_make_-npd.out 
-less android_make_-pd.out 
-ls -al
-vim android_make_-pd.out 
-vim android_make_-p.out 
-vim android_make_-d.out 
-cd ../../
-cd ../
-ls
-cd ..
-ls
-cd MPA3-JB/
-ls
-mkdir export_2
-cd export_2/
-last
 cd ~
 ls
 cd MPA3-JB/
@@ -1997,4 +1887,114 @@ ls
 cd 4AJ.2.1/
 svn up
 vim Desktop/list.txt 
+exit
+vim Desktop/list.txt 
+cat Desktop/list.txt 
+exit
+man svnsync
+svnsync help
+svnsync --help
+svnsync help help
+svnsync help initialize 
+svnsync help synchronize 
+clear
+svnsync help 
+svnsync help copy-revprops 
+svnadmin help
+man svnadmin 
+man svnserve
+man svntrac
+man svnlook 
+svnlook help
+ls
+mkdir svn
+ls
+chmod 777 svn/
+ls
+rm -r Templates/
+rm -r Ubuntu\ One/
+rm -r Videos/
+ls
+rm -rf linux-3.6.6/
+rm -r bootloaders/
+ls
+rm -rf MPA3-Android-4AJ.1.1/
+rm -rf MPA3-Android-4AJ.1.1/ &
+ls
+rm -rf Music/ &
+ls
+rm android_make.out 
+ls
+echo $PATH
+cd GitHub_Qiao-Huang_scripts/
+ls
+git commit -a
+git push
+ls
+cd ..
+ls
+rm examples.desktop 
+ls
+cd bin/
+ls
+cd ..
+rm -rf bin/
+ls
+cd CodeSourcery/
+ls
+cd ..
+ls
+ls -al Documents/
+ls
+rm -rf Documents/
+ls
+cd svn/
+svnsync
+svnsync help
+screen -r
+exit
+cd svn/
+svnsync help initialize 
+sudo apt-get install pre-revprop-change
+svnadmin create MC67
+ls
+svnsync initialize MC67/ svn://10.0.3.205/MC67_JB
+svnsync initialize ./MC67/ svn://10.0.3.205/MC67_JB
+less MC67/hooks/pre-revprop-change.tmpl 
+rm -rf MC67/
+mkdir MC67_JB
+ls
+svnadmin create MC67_JB/
+cp MC67_JB/hooks/pre-revprop-change.tmpl MC67_JB/hooks/pre-revprop-change
+chmod 777 MC67_JB/hooks/pre-revprop-change
+ls
+cd MC67_JB/
+ls
+cd ..
+cd MC67_JB/
+svnsync initialize . svn://10.0.3.205/MC67_JB
+echo '#!/bin/sh' > hooks/pre-revprop-change
+chmod 755 hooks/pre-revprop-change
+svnsync initialize file:///newhome/qian/svn/MC67_JB svn://10.0.3.205/MC67_JB
+svnsync synchronize file:///newhome/qian/svn/MC67_JB
+exit
+ls
+screen -r
+cd MC67_JB/4AJ.1.1/
+grep -rn "Unable to handle kernel paging request at virtual address" ./kernel/
+grep -rn "Unable to handle kernel paging request at virtual address" ./kernel/*/*.c
+cd ../../MPA3-JB/export/
+grep -rn "Unable to handle kernel paging request at virtual address" ./4AJ.2.1-20130206/kernel/android-3.0/
+cd 4AJ.2.1-20130206/kernel/android-3.0/
+make distclean
+make clean
+grep -rn "Unable to handle kernel paging request at virtual address" ./arch/arm/
+grep -rn "Unable to handle kernel paging request at virtual address" ./kernel/
+grep -rn "Unable to handle kernel paging request at virtual address" ./init/
+grep -rn "Unable to handle kernel paging request at virtual address" ./lib/
+grep -rn "Unable to handle kernel paging request at virtual address" ./mm/
+grep -rn "Unable to handle kernel paging request at virtual address" ./net/
+grep -rn "Unable to handle kernel paging request at virtual address" ./fs/
+grep -rn "kernel paging request" ./arch/arm/
+grep -rn "kernel paging request" ./include/
 exit
