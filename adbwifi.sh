@@ -18,6 +18,7 @@ _get_device_addr ()
   echo $address
 }
 
+
 # Read IP address.
 ip_address=$(_get_device_addr)
 
